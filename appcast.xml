@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Whoships</title>
+        <item>
+            <title>1.0.19</title>
+            <pubDate>Thu, 19 Nov 2026 14:23:18 +0100</pubDate>
+            <link>https://whoships.app/</link>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>1.0.19</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+  <li>New in Settings › General: Share anonymous usage statistics. Whoships sends its version and a random ID at most once a day, so we know how many people use it. It never sends your GitHub data. Turn it off at any time.</li>
+</ul>
+]]></description>
+            <enclosure url="https://downloads.whoships.app/Whoships-1.0.19-27.dmg" length="5567465" type="application/octet-stream" sparkle:edSignature="sDjdXz2zVcAghtqz4PFEw6Z0KnnD0EK+otrF9FGS+ktK7Y8UPeznE+xwaGX5PVsVlUBKX8ujVp3kC+g5j1gUDw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://downloads.whoships.app/Whoships27-26.delta" sparkle:deltaFrom="26" length="343466" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="eyQDkhYOoQqontfMUXpm5g9VdbbQVkmnLk9/IC2Fhu6bcg+llWklqCygINvQCv65ZHGEq5ateG1S9N+QDUNnBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0.18</title>
+            <pubDate>Thu, 19 Nov 2026 00:03:35 +0100</pubDate>
+            <link>https://whoships.app/</link>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>1.0.18</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+  <li>Whoships is now available to download from whoships.app, with a 14-day free trial and a one-time license.</li>
+  <li>Updates arrive inside the app: Whoships checks whoships.app for new versions.</li>
+</ul>
+]]></description>
+            <enclosure url="https://downloads.whoships.app/Whoships-1.0.18-26.dmg" length="5531819" type="application/octet-stream" sparkle:edSignature="QDNfRWDZg5FsxrUJXtdRJDIOm7VU3p/2PnfPG4CMb5qLvA5LKnw3TXpp7xX6Bqgg/cAXyZBBdRaUeJiDGAPQAA=="/>
+        </item>
+    </channel>
+</rss>

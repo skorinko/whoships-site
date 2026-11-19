@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · Whoships</title>
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#13111c" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="analytics.js?v=3"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/icon.png" alt="">Whoships</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="./">Home</a>
+      <a href="buy.html">Pricing</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main class="page">
+  <h1>Support</h1>
+  <p class="lead">Questions, problems or ideas: write to <a href="mailto:macapps.support@icloud.com">macapps.support@icloud.com</a>. Mention your macOS version and what you see.</p>
+
+  <h2>Getting started</h2>
+  <ol class="steps">
+    <li>Open Whoships. In the Welcome window, click <strong>Sign in with GitHub</strong>, copy the code, paste it on the GitHub page that opens and click <strong>Authorize</strong>. Or try everything first with <strong>Try with sample data</strong>.</li>
+    <li>Choose the organization to watch.</li>
+    <li>Add widgets: Control-click the desktop, choose <strong>Edit Widgets</strong>, search for <strong>Whoships</strong> and drag a widget onto the desktop.</li>
+    <li>For the full-desktop dashboard, click the Whoships icon in the menu bar and switch on <strong>Desktop dashboard</strong>.</li>
+  </ol>
+
+  <h2>"Waiting for your organization to approve Whoships"</h2>
+  <p>Many organizations only let approved apps read their private data. Whoships then shows nothing rather than wrong, empty results. On the waiting screen, click <strong>Open Whoships on GitHub</strong> to request access, and send an organization owner the ready-made message from <strong>Copy message for an owner</strong>. Owners approve it under Organization settings › Third-party access › OAuth app policy. Whoships checks every two minutes and starts on its own. A personal access token isn't affected by this approval, if you prefer that.</p>
+
+  <h2>Signing in with a personal access token</h2>
+  <p>In the Welcome window, choose <strong>Use a token</strong>. Create a classic token with the <code>repo</code>, <code>read:org</code> and <code>read:user</code> scopes. If your organization uses single sign-on, click <strong>Configure SSO</strong> next to the token on GitHub and authorize the organization.</p>
+
+  <h2>Widgets</h2>
+  <ul>
+    <li>Each widget card has a round switch button at the top right that shows the next list. To fix a widget to one list, Control-click it and choose <strong>Edit "Whoships"</strong>.</li>
+    <li>Widgets update when Whoships refreshes, so keep it running: Settings › General › <strong>Open at login</strong>.</li>
+    <li>macOS dims desktop widgets while another app is in front; System Settings › Desktop &amp; Dock › <strong>Dim widgets on desktop</strong> controls this.</li>
+  </ul>
+
+  <h2>How often it refreshes</h2>
+  <p>Your own PRs every 3 minutes, org activity every 15 minutes, and delivery, security and CI health every hour, well within GitHub's hourly API limit. Click the refresh button to update now.</p>
+
+  <h2>Some cards say "needs org admin access"</h2>
+  <p>Self-hosted runners and outside collaborators need organization admin access, billing needs owner or billing manager access, and security alerts need the features enabled and access to them. Whoships shows everything else and notes what it couldn't read.</p>
+
+  <h2>Free trial and purchase</h2>
+  <p>Sample data is always free: choose <strong>Try with sample data</strong> for a made-up organization, no GitHub account needed. With your own organization, Whoships offers a <strong>free 14-day trial</strong> right after you choose it. After the trial, the one-time purchase <strong>Whoships Lifetime</strong> keeps it going, with no subscription. Until then, the menu bar and widgets ask you to buy and nothing is read from GitHub. See <a href="buy.html">Pricing</a>.</p>
+
+  <h2>License keys (bought on whoships.app)</h2>
+  <ul>
+    <li><strong>Unlocking:</strong> open Whoships, click <strong>Unlock</strong>, paste the license key from your purchase email and click <strong>Activate</strong>.</li>
+    <li><strong>Another Mac:</strong> enter the same key on every Mac you personally use.</li>
+    <li><strong>Lost your key?</strong> Email us from the address you bought with and we'll send it again.</li>
+    <li><strong>Refunds</strong> within 14 days: see the <a href="refunds.html">Refund Policy</a>.</li>
+  </ul>
+
+  <h2>App Store purchases</h2>
+  <p>Bought on the Mac App Store? On another Mac, or after reinstalling, open Settings › Account and click <strong>Restore Purchases</strong>. The trial and Whoships Lifetime belong to your Apple Account, so the trial can be taken once. For refunds, use <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, since Apple handles App Store payments.</p>
+
+  <h2>Signing out</h2>
+  <p>Settings › Account › <strong>Sign out</strong> deletes your sign-in and all fetched data from your Mac. To revoke Whoships's access on GitHub too, open GitHub › Settings › Applications.</p>
+
+  <h2>Removing Whoships</h2>
+  <p>Sign out first if you want to delete its data, then quit Whoships and move it to the Trash. Nothing on GitHub is affected: Whoships only reads.</p>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dmitry Skorinko</span>
+    <span><a href="./">Home</a> · <a href="buy.html">Pricing</a> · <a href="terms.html">Terms</a> · <a href="refunds.html">Refund Policy</a> · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:macapps.support@icloud.com">macapps.support@icloud.com</a></span>
+  </div>
+</footer>
+</body>
+</html>
