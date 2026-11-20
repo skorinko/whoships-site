@@ -1,0 +1,18 @@
+---
+permalink: /llms-full.txt
+layout: false
+eleventyExcludeFromCollections: true
+---
+# Whoships: full text of the English pages
+
+{{ i18n.en.oneLiner }}
+{% for p in collections.all | sort(false, false, "url") %}
+{%- if p.data.locale.code == "en" and not p.data.noindex and p.url.endsWith("/") and p.url != "/terms/" and p.url != "/refunds/" %}
+
+---
+URL: {{ p.url | absolute }}
+Title: {{ p.data.title }}
+
+{{ p.content | plainText }}
+{%- endif %}
+{%- endfor %}

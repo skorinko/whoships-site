@@ -1,0 +1,16 @@
+{
+  "name": "whoships-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve --port 8766",
+    "check": "node scripts/check-site.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.8"
+  },
+  "optionalDependencies": {
+    "fsevents": "2.3.3"
+  }
+}

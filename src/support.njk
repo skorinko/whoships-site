@@ -1,0 +1,22 @@
+---js
+{
+  pagination: { data: "site.locales", size: 1, alias: "locale", addAllPagesToCollections: true },
+  pageKey: "support",
+  eleventyComputed: {
+    permalink: (d) => `${d.locale.prefix}/support/`,
+    title: (d) => (d.i18n[d.locale.code] || d.i18n.en).support.title,
+    description: (d) => (d.i18n[d.locale.code] || d.i18n.en).support.description,
+  },
+}
+---
+<article class="doc">
+  <h1>{{ t.support.h1 }}</h1>
+  <p>{{ t.support.intro | safe }}</p>
+  {%- for s in t.support.sections %}
+
+  <h2>{{ s[0] }}</h2>
+  {{ s[1] | fmt(v) | safe }}
+  {%- endfor %}
+
+  <p>{{ t.support.faqLink | fmt(v) | safe }}</p>
+</article>

@@ -1,0 +1,16 @@
+---
+title: "Whoships Compared: GitHub Apps and Metrics Tools"
+description: "How Whoships compares with other ways to follow a GitHub organization: menu bar apps, GitHub's own notifications and engineering-metrics platforms."
+h1: Comparisons
+schema: []
+layout: base.njk
+---
+<article class="doc">
+  <h1>Comparisons</h1>
+  <p class="answer">Honest comparisons between Whoships and other ways to keep up with a GitHub organization, including when the other option is the better choice. Competitor facts were checked on their own websites on the date shown on each page.</p>
+  <div class="cards-links">
+    {%- for g in collections.compare %}{% if g.data.short %}
+    <a href="{{ g.url }}"><strong>{{ g.data.h1 or g.data.title }}</strong><span>{{ g.data.description }}</span></a>
+    {%- endif %}{% endfor %}
+  </div>
+</article>

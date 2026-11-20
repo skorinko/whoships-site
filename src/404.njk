@@ -1,0 +1,19 @@
+---
+permalink: /404.html
+noindex: true
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ t.notFound.title }}"
+  description: "{{ t.oneLiner }}"
+---
+<article class="doc">
+  <h1>{{ t.notFound.h1 }}</h1>
+  <p>{{ t.notFound.text | fmt(v) | safe }}</p>
+  <ul>
+    <li><a href="/github-dashboard-mac/">{{ t.hubs.dashboard.h1 }}</a></li>
+    <li><a href="/github-widgets-mac/">{{ t.hubs.widgets.h1 }}</a></li>
+    <li><a href="/watchers/">Watchers</a></li>
+    <li><a href="/faq/">{{ t.faq.h1 }}</a></li>
+    <li><a href="/guides/">Guides</a></li>
+  </ul>
+</article>

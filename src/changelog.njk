@@ -1,0 +1,18 @@
+---
+permalink: /changelog/
+pageKey: changelog
+title: "What's New in Whoships: Release Notes"
+description: "Release notes for Whoships, the GitHub organization dashboard for Mac: every version and what changed."
+crumbs: [{ name: "What's new" }]
+---
+<article class="doc">
+  <h1>What's new in Whoships</h1>
+  <p class="answer">Whoships {{ site.version }} is the current version, released {{ site.versionDate | localDate("en") }}. The version downloaded from whoships.app updates itself; the App Store version is updated by the App Store. Subscribe with the <a href="/feed.xml">RSS feed</a>.</p>
+  {%- for r in releases %}
+  <section id="v{{ r.version }}">
+    <h2>Whoships {{ r.version }}</h2>
+    <p class="updated"><time datetime="{{ r.date | isoDate }}">{{ r.date | localDate("en") }}</time></p>
+    {{ r.notes | safe }}
+  </section>
+  {%- endfor %}
+</article>

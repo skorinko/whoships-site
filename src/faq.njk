@@ -1,0 +1,25 @@
+---js
+{
+  pagination: { data: "site.locales", size: 1, alias: "locale", addAllPagesToCollections: true },
+  pageKey: "faq",
+  schema: ["app", "faq"],
+  placement: "faq",
+  updated: "2026-11-20",
+  eleventyComputed: {
+    permalink: (d) => `${d.locale.prefix}/faq/`,
+    title: (d) => (d.i18n[d.locale.code] || d.i18n.en).faq.title,
+    description: (d) => (d.i18n[d.locale.code] || d.i18n.en).faq.description,
+    faqItems: (d) => (d.i18n[d.locale.code] || d.i18n.en).faq.items,
+    crumbs: (d) => [{ name: (d.i18n[d.locale.code] || d.i18n.en).nav.faq }],
+  },
+}
+---
+<article class="doc">
+  <h1>{{ t.faq.h1 }}</h1>
+  <p class="answer">{{ t.oneLiner }}</p>
+  {% include "faq.njk" %}
+  <p class="updated">{{ t.lastUpdated }}: {{ updated | localDate(locale.code) }}</p>
+</article>
+
+{% include "facts.njk" %}
+{% include "band.njk" %}

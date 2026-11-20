@@ -1,0 +1,33 @@
+---
+permalink: /feed.xml
+layout: false
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Whoships</title>
+    <link>{{ site.url }}/</link>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Releases and guides from Whoships, the GitHub organization dashboard for Mac.</description>
+    <language>en</language>
+    {%- for r in releases %}
+    <item>
+      <title>Whoships {{ r.version }}</title>
+      <link>{{ site.url }}/changelog/#v{{ r.version }}</link>
+      <guid isPermaLink="false">whoships-release-{{ r.version }}</guid>
+      <pubDate>{{ r.date | rfc822 }}</pubDate>
+      <description>{{ r.notes | xmlEscape }}</description>
+    </item>
+    {%- endfor %}
+    {%- for g in collections.guide %}{% if g.data.short %}
+    <item>
+      <title>{{ (g.data.h1 or g.data.title) | xmlEscape }}</title>
+      <link>{{ g.url | absolute }}</link>
+      <guid>{{ g.url | absolute }}</guid>
+      <pubDate>{{ g.data.updated | rfc822 }}</pubDate>
+      <description>{{ g.data.description | xmlEscape }}</description>
+    </item>
+    {%- endif %}{% endfor %}
+  </channel>
+</rss>

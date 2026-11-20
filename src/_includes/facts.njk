@@ -1,0 +1,8 @@
+<section class="facts" aria-labelledby="facts-h">
+  <h2 id="facts-h">{{ t.facts.title }}</h2>
+  <dl>
+    {%- for r in t.facts.rows %}
+    <div><dt>{{ r[0] }}</dt><dd>{{ r[1] }}</dd></div>
+    {%- endfor %}
+  </dl>
+</section>
