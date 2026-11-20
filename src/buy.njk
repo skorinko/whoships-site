@@ -1,0 +1,44 @@
+---js
+{
+  pagination: { data: "site.locales", size: 1, alias: "locale", addAllPagesToCollections: true },
+  pageKey: "buy",
+  schema: ["app"],
+  eleventyComputed: {
+    permalink: (d) => `${d.locale.prefix}/buy/`,
+    title: (d) => (d.i18n[d.locale.code] || d.i18n.en).buy.title,
+    description: (d) => (d.i18n[d.locale.code] || d.i18n.en).buy.description,
+  },
+}
+---
+<section class="price">
+  <h1>{{ t.buy.h1 }}</h1>
+  <p class="lead">{{ t.buy.lead }}</p>
+  <p class="amount">{{ site.price.eur | money("EUR", locale.intl) }} / {{ site.price.usd | money("USD", locale.intl) }}</p>
+  <p class="per">{{ t.buy.per }}</p>
+  <a class="button waiting" id="buy-button" href="#" data-track="buy" data-placement="buy_page" aria-disabled="true" role="button"
+     data-label-buy="{{ t.buy.js.buy }}" data-label-done="{{ t.buy.js.done }}" data-msg-sandbox="{{ t.buy.js.sandbox }}"
+     data-msg-thanks="{{ t.buy.js.thanks }}" data-msg-thanks-to="{{ t.buy.js.thanksTo }}" data-paddle-locale="{{ locale.paddle }}">{{ t.buy.waiting }}</a>
+  <p class="note" id="buy-status" role="status">{{ t.buy.tryFirst }}</p>
+  <p class="note">{{ t.buy.downloadLink | safe }}</p>
+</section>
+
+<section class="features">
+  {%- for c in t.buy.cards %}
+  <div class="feature"><h3>{{ c[0] }}</h3><p>{{ c[1] | fmt(v) | safe }}</p></div>
+  {%- endfor %}
+</section>
+
+<article class="doc">
+  <h2>{{ t.buy.waysTitle }}</h2>
+  <ul>
+    <li>{{ t.buy.wayWeb | safe }}</li>
+    <li>{{ t.buy.wayStore | safe }} <span class="store-badge"{% if not site.appStoreLive %} hidden{% endif %}><a href="{{ site.appStoreUrl }}" data-track="appstore" data-placement="buy_page"><img src="/assets/mac-app-store-badge.svg" alt="{{ t.cta.appStoreAlt }}" width="156" height="40"></a></span></li>
+  </ul>
+  <p class="small">{{ t.buy.smallKeys }}</p>
+  <p class="small">{{ t.buy.smallTerms | safe }}</p>
+</article>
+
+{% include "facts.njk" %}
+
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script src="/assets/buy.js?v=5"></script>

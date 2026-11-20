@@ -1,0 +1,60 @@
+---js
+{
+  pagination: { data: "watchers", size: 1, alias: "w", addAllPagesToCollections: true },
+  schema: ["article", "faq"],
+  tags: ["watcher"],
+  updated: "2026-11-20",
+  placement: "watcher",
+  eleventyComputed: {
+    permalink: (d) => `/watchers/${d.w.slug}/`,
+    pageKey: (d) => `watcher-${d.w.key}`,
+    title: (d) => d.w.title,
+    description: (d) => d.w.description,
+    short: (d) => d.w.name,
+    h1: (d) => d.w.h1,
+    image: (d) => `/assets/watchers/${d.w.key}-light.webp`,
+    faqItems: (d) => d.w.faq,
+    crumbs: (d) => [{ name: "Watchers", url: "/watchers/" }, { name: d.w.name }],
+  },
+}
+---
+<article class="doc">
+  <h1>{{ w.h1 }}</h1>
+  <p class="answer">{{ w.answer }}</p>
+  <figure class="watcher-shot">
+    <picture>
+      <source srcset="/assets/watchers/{{ w.key }}-dark.webp" media="(prefers-color-scheme: dark)">
+      <img src="/assets/watchers/{{ w.key }}-light.webp" alt="The {{ w.name }} watcher as a large widget, with sample data from a made-up organization" width="364" height="382">
+    </picture>
+    <figcaption>{{ w.name }} as a large widget, with sample data. Refreshes every {{ w.refresh }}.</figcaption>
+  </figure>
+  <h2>What does {{ w.name }} show?</h2>
+  <ul>
+    {%- for s in w.shows %}
+    <li>{{ s | safe }}</li>
+    {%- endfor %}
+  </ul>
+  <h2>How does Whoships work it out?</h2>
+  {%- for para in w.how %}
+  <p>{{ para | safe }}</p>
+  {%- endfor %}
+  <h2>What access does it need?</h2>
+  <p>{{ w.access | safe }} Whoships only reads; it never changes anything on GitHub.</p>
+  <h2>Where can I see it?</h2>
+  <p>As a card on the <a href="/github-dashboard-mac/">desktop dashboard</a>, in a <a href="/github-widgets-mac/">widget</a> of any size{% if w.key in ["myActions", "myWaiting", "globalAttention"] %}, and in the <a href="/github-menu-bar-app-mac/">menu bar</a> popover{% endif %}. Try it with sample data before signing in.</p>
+  <div class="ctas left">
+    <a class="button" href="/download" data-track="download" data-placement="watcher_{{ w.key }}">{{ t.cta.download }}</a>
+    <a class="button secondary" href="/buy/" data-track="pricing" data-placement="watcher_{{ w.key }}">{{ t.cta.pricing }}</a>
+  </div>
+  <h2>Questions</h2>
+  {% include "faq.njk" %}
+  <h2>Other watchers</h2>
+  <ul class="pill-grid left">
+    {%- for o in watchers %}{% if o.key != w.key %}
+    <li><a href="/watchers/{{ o.slug }}/">{{ o.name }}</a></li>
+    {%- endif %}{% endfor %}
+  </ul>
+  <p class="updated">{{ t.lastUpdated }}: {{ updated | localDate("en") }}</p>
+</article>
+{% include "facts.njk" %}
+{% include "band.njk" %}

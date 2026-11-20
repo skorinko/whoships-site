@@ -1,0 +1,66 @@
+---js
+{
+  pagination: { data: "site.locales", size: 1, alias: "locale", addAllPagesToCollections: true },
+  pageKey: "home",
+  schema: ["home"],
+  placement: "home",
+  eleventyComputed: {
+    permalink: (d) => `${d.locale.prefix}/`,
+    title: (d) => (d.i18n[d.locale.code] || d.i18n.en).home.title,
+    description: (d) => (d.i18n[d.locale.code] || d.i18n.en).home.description,
+    faqItems: (d) => (d.i18n[d.locale.code] || d.i18n.en).faq.items.slice(0, 4),
+  },
+}
+---
+{%- set enOnly = ' hreflang="en"' if locale.code != 'en' else '' -%}
+<section class="hero">
+  <img class="icon" src="/assets/icon.png" alt="{{ t.home.iconAlt }}" width="128" height="128">
+  <h1>{{ t.home.h1 }}</h1>
+  <p class="lead">{{ t.home.lead }}</p>
+  <div class="ctas">
+    <a class="button" href="/download" data-track="download" data-placement="home_hero">{{ t.cta.download }}</a>
+    <a class="button secondary" href="{{ locale.prefix }}/buy/" data-track="pricing" data-placement="home_hero">{{ t.cta.pricing }}</a>
+  </div>
+  <p class="store-badge"{% if not site.appStoreLive %} hidden{% endif %}><a href="{{ site.appStoreUrl }}" data-track="appstore" data-placement="home_hero"><img src="/assets/mac-app-store-badge.svg" alt="{{ t.cta.appStoreAlt }}" width="156" height="40"></a></p>
+  <p class="note">{{ t.cta.note }}</p>
+</section>
+
+<img class="shot" src="/assets/dashboard.webp" alt="{{ t.home.shotDashboardAlt }}" width="1600" height="1000" fetchpriority="high">
+
+<section class="features">
+  {%- for c in t.home.cards %}
+  <div class="feature"><h3>{{ c[0] }}</h3><p>{{ c[1] }}</p></div>
+  {%- endfor %}
+</section>
+
+<h2 class="section">{{ t.home.whereTitle }}</h2>
+<div class="cards-links three">
+  {%- for w in t.home.where %}
+  <a href="{{ locale.prefix }}/{{ site.hubSlug[w[2]] }}/"><strong>{{ w[0] }}</strong><span>{{ w[1] }}</span></a>
+  {%- endfor %}
+</div>
+
+<img class="shot" src="/assets/widgets.webp" alt="{{ t.home.shotWidgetsAlt }}" width="1600" height="1000" loading="lazy">
+
+<h2 class="section">{{ t.home.watchersTitle }}</h2>
+<p class="center muted">{{ t.home.watchersText }}</p>
+<ul class="pill-grid">
+  {%- for w in watchers %}
+  <li><a href="/watchers/{{ w.slug }}/"{{ enOnly | safe }}>{{ t.watcherNames[w.key] }}</a></li>
+  {%- endfor %}
+</ul>
+
+<h2 class="section">{{ t.home.howTitle }}</h2>
+<ol class="steps">
+  {%- for s in t.home.howSteps %}
+  <li>{{ s }}</li>
+  {%- endfor %}
+</ol>
+
+{% include "facts.njk" %}
+
+<h2 class="section">{{ t.home.faqTitle }}</h2>
+{% include "faq.njk" %}
+<p class="center"><a href="{{ locale.prefix }}/faq/">{{ t.home.faqMore }}</a></p>
+
+{% include "band.njk" %}

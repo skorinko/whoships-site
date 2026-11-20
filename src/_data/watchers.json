@@ -1,0 +1,264 @@
+[
+  {
+    "key": "myActions",
+    "slug": "pull-requests-waiting-for-my-review",
+    "name": "Needs me",
+    "refresh": "3 minutes",
+    "title": "See PRs Waiting for Your Review on Mac | Whoships",
+    "description": "Whoships lists every GitHub pull request waiting for your review, plus your PRs with failed CI, conflicts or ready to merge, in a Mac widget.",
+    "h1": "Every pull request waiting for you, in one widget",
+    "answer": "The Needs me watcher collects everything in your GitHub organization that only you can unblock: reviews requested from you or your teams, your pull requests with failed CI and the reason, merge conflicts, requested changes, and PRs that are approved and ready to merge. It refreshes every 3 minutes and shows on your Mac desktop, in the menu bar and on the desktop dashboard.",
+    "shows": [
+      "Pull requests where your review, or a review from one of your teams, is requested",
+      "Your pull requests whose CI failed, with the reason: tests, lint, build, timeout, out of disk, out of memory, access denied and more",
+      "Your pull requests with merge conflicts or requested changes",
+      "Your pull requests that are approved and ready to merge",
+      "Pull requests assigned to you"
+    ],
+    "how": [
+      "Whoships asks GitHub for open pull requests in the organization you watch where you, or a team you belong to, are a requested reviewer, and for your own open pull requests with their review and check status.",
+      "When a check fails, Whoships works out why from the check's conclusion, the name of the failed step and the end of the job log, so the row says “Tests failed” or “Out of disk” instead of a red cross. Each log is read once and the result is kept on your Mac."
+    ],
+    "access": "Your GitHub sign-in with the <code>repo</code>, <code>read:org</code> and <code>read:user</code> scopes. If the organization restricts OAuth apps, an owner approves Whoships once.",
+    "faq": [
+      ["Is this the same as GitHub's review requests page?", "It covers the same review requests, limited to the one organization you watch, and adds your own pull requests that need action: failed CI with the reason, conflicts, requested changes and PRs ready to merge. It stays on your desktop instead of in a browser tab."],
+      ["Does it include requests sent to my team?", "Yes. Reviews requested from a team you belong to are listed with the team's name, so you can see what the team is waiting for."],
+      ["How quickly does a new review request appear?", "Whoships refreshes your own work every 3 minutes, and you can refresh at any time. With notifications on, a new item at the level you chose also shows a macOS notification."]
+    ]
+  },
+  {
+    "key": "myWaiting",
+    "slug": "my-pull-requests-waiting-on-review",
+    "name": "I'm waiting on",
+    "refresh": "3 minutes",
+    "title": "Track Your PRs Waiting on Review or CI | Whoships",
+    "description": "See which of your GitHub pull requests are waiting on CI, a first review or a re-review, and for how long, in a widget on your Mac.",
+    "h1": "Your pull requests that are waiting on someone else",
+    "answer": "The I'm waiting on watcher lists your open pull requests that are blocked on something other than you: CI that is still running, a first review, a re-review after you pushed changes, or no reviewer assigned at all. Each row says who or what you are waiting for and for how long, so you know whom to nudge.",
+    "shows": [
+      "Your pull requests waiting for CI to finish",
+      "Your pull requests waiting for a first review, with the requested reviewers",
+      "Your pull requests waiting for a re-review after new commits",
+      "Pull requests with no reviewer assigned",
+      "Your drafts, and the longest wait across all of them"
+    ],
+    "how": [
+      "Whoships reads your open pull requests in the watched organization with their requested reviewers, reviews and check runs. A pull request moves to Needs me as soon as it needs your action, such as a failed check or requested changes, so the two lists never overlap."
+    ],
+    "access": "Your GitHub sign-in with the <code>repo</code>, <code>read:org</code> and <code>read:user</code> scopes.",
+    "faq": [
+      ["Why is a pull request missing from this list?", "It needs something from you, so it is in Needs me instead, or it is in a repository that Settings › Repositories doesn't watch. Repositories with no pushes for 60 days are skipped."],
+      ["Can I see how long each pull request has been waiting?", "Yes. Each row shows the wait time, and the card's headline shows the longest wait across your pull requests."],
+      ["Does Whoships remind reviewers for me?", "No. Whoships only reads from GitHub and never posts comments or pings anyone. Click a row to open the pull request on GitHub."]
+    ]
+  },
+  {
+    "key": "globalAttention",
+    "slug": "stale-pull-requests",
+    "name": "Attention",
+    "refresh": "15 minutes",
+    "title": "Spot Red CI and Risky Pushes in GitHub | Whoships",
+    "description": "Whoships flags red CI on main, force pushes, direct pushes, unreviewed merges and hotfixes across your GitHub organization, on your Mac desktop.",
+    "h1": "What's on fire across your GitHub organization",
+    "answer": "The Attention watcher looks across the whole organization for problems that affect everyone: CI red on the default or production branch, CI failing in many repositories at once, GitHub Actions outages, force pushes and direct pushes to protected branches, merges that skipped a required review or had red checks, and hotfixes or reverts landing in production.",
+    "shows": [
+      "Default or production branches whose CI has failed twice in a row",
+      "CI failing across many repositories at once, and GitHub Actions incidents from githubstatus.com",
+      "Force pushes and direct pushes to the default branch, and deleted mainline branches",
+      "Merges that bypassed a required review or had failing checks",
+      "Hotfixes and reverts merged to production"
+    ],
+    "how": [
+      "Every 15 minutes Whoships reads recent pushes, merged pull requests and workflow runs in the watched repositories. A push counts as direct when no pull request introduced it; a merge counts as unreviewed when it had no approving review.",
+      "Hotfixes are recognized by branch name (<code>hotfix/*</code>), label (<code>hotfix</code>, <code>incident</code>, <code>sev1</code>, <code>sev2</code>) or a title that starts with “Revert” or “Hotfix”. All of these patterns can be changed in Settings › Rules."
+    ],
+    "access": "Your GitHub sign-in with the <code>repo</code> and <code>read:org</code> scopes. GitHub's service status is public and needs no sign-in.",
+    "faq": [
+      ["What counts as “CI is red on main”?", "Two failed runs in a row on the default branch or a production branch. The threshold can be changed in Settings › Rules."],
+      ["Does Whoships see force pushes on every branch?", "It reports force pushes to the default and production branches, where they rewrite shared history. Force pushes to feature branches are normal and are ignored."],
+      ["Can Attention alerts go to Slack?", "Not yet. They show in the widget, the menu bar, the desktop dashboard and as macOS notifications. Forwarding to Slack or Teams is on the list of ideas."]
+    ]
+  },
+  {
+    "key": "whoIsWorking",
+    "slug": "who-is-working-on-what",
+    "name": "Who's on what",
+    "refresh": "15 minutes",
+    "title": "See What Your Team Is Working On in GitHub | Whoships",
+    "description": "Whoships shows each person's branches, open pull requests, ticket keys and what they shipped in 48 hours, from your GitHub organization, on your Mac.",
+    "h1": "Who is working on what, without asking in standup",
+    "answer": "The Who's on what watcher shows, for each person in your GitHub organization, the branches they pushed this week, their open pull request, the ticket keys in their branch names and PR titles, and what they shipped in the last 48 hours. It answers “what is everyone on?” before standup, from data GitHub already has.",
+    "shows": [
+      "Each active person with the branches they pushed this week",
+      "Their open pull request and its repository",
+      "Ticket keys such as <code>ENG-123</code> found in branch names and PR titles",
+      "What each person merged in the last 48 hours"
+    ],
+    "how": [
+      "Whoships reads recent pushes and pull requests in the watched repositories and groups them by author. Ticket keys are matched with the pattern in Settings › Rules (by default, capital letters, a hyphen and a number), so Jira and Linear keys both work without connecting either tool."
+    ],
+    "access": "Your GitHub sign-in with the <code>repo</code> and <code>read:org</code> scopes.",
+    "faq": [
+      ["Is this a way to monitor people?", "It shows the same branches and pull requests anyone in the organization can already see on GitHub, gathered in one place. It counts no hours and keeps no history beyond what GitHub reports."],
+      ["Does it connect to Jira or Linear?", "No. It finds ticket keys in branch names and PR titles, so the keys show up without any extra sign-in."],
+      ["Who appears in the list?", "People who pushed a branch or opened, updated or merged a pull request in the watched repositories this week."]
+    ]
+  },
+  {
+    "key": "activeRepos",
+    "slug": "active-repositories",
+    "name": "Active repos",
+    "refresh": "15 minutes",
+    "title": "Most Active Repos in Your GitHub Org | Whoships",
+    "description": "Whoships ranks the repositories in your GitHub organization by commits, merged and opened PRs and contributors, with a 14-day trend, on your Mac.",
+    "h1": "The most active repositories in your organization",
+    "answer": "The Active repos watcher ranks the repositories in your GitHub organization by commits, merged and opened pull requests, and contributors this week, with a 14-day sparkline and the trend against the week before. It shows where the work is happening right now.",
+    "shows": [
+      "Repositories ranked by activity this week",
+      "Commits, merged pull requests, opened pull requests and contributors per repository",
+      "A 14-day sparkline and the change against the previous week",
+      "Totals across the organization"
+    ],
+    "how": [
+      "Whoships counts commits on the default branch and pull requests opened and merged in each watched repository, then ranks repositories by a mix of all of them. Repositories with no pushes for 60 days are skipped to save GitHub API budget."
+    ],
+    "access": "Your GitHub sign-in with the <code>repo</code> and <code>read:org</code> scopes.",
+    "faq": [
+      ["How many repositories can Whoships watch?", "Choose repositories in Settings › Repositories, or watch all of them. In “all repositories” mode it stops at 100 repositories so refreshes stay within GitHub's hourly API limit."],
+      ["Are archived repositories included?", "No. Archived repositories and repositories with no pushes for 60 days are skipped."],
+      ["Can I see this for more than one organization?", "Whoships watches one organization at a time. Switching organizations in Settings clears the data and refreshes."]
+    ]
+  },
+  {
+    "key": "activeDevs",
+    "slug": "team-activity",
+    "name": "Active people",
+    "refresh": "15 minutes",
+    "title": "GitHub Team Activity at a Glance on Mac | Whoships",
+    "description": "Whoships shows who is active in your GitHub organization this week, by merged PRs, reviews and pushes. Activity, not a performance score.",
+    "h1": "Team activity in your GitHub organization this week",
+    "answer": "The Active people watcher lists who is active in your GitHub organization this week, with their merged pull requests, reviews and pushes. It is a view of activity, not a performance score: it helps you notice who is carrying reviews or who has gone quiet, so you can ask how they are doing.",
+    "shows": [
+      "People ranked by merged pull requests, reviews and pushes this week",
+      "Each person's merged and opened pull requests, reviews and pushes",
+      "How many people were active and how many reviewed",
+      "A sparkline of each person's recent activity"
+    ],
+    "how": [
+      "Whoships counts pull requests, reviews and pushes per author in the watched repositories. Bots such as Dependabot are left out."
+    ],
+    "access": "Your GitHub sign-in with the <code>repo</code> and <code>read:org</code> scopes.",
+    "faq": [
+      ["Should I use this to rate developers?", "No. Counts of pull requests and pushes say nothing about the value of the work. Whoships labels the card as activity on purpose. Use it to spot review load and people who might need help."],
+      ["Does it include bots?", "No. Dependabot, Renovate and other bot accounts are left out of the ranking."],
+      ["What period does it cover?", "The last 7 days, compared with the 7 days before."]
+    ]
+  },
+  {
+    "key": "flowHealth",
+    "slug": "pull-request-cycle-time",
+    "name": "Flow health",
+    "refresh": "15 minutes",
+    "title": "PR Cycle Time and Review Bottlenecks | Whoships",
+    "description": "Whoships tracks PR cycle time, time to first review, stale and oversized PRs and review bottlenecks in your GitHub organization, on your Mac.",
+    "h1": "Pull request cycle time and review bottlenecks",
+    "answer": "The Flow health watcher shows how smoothly pull requests move through review in your GitHub organization: the median time to first review and cycle time, plus the pull requests that are stuck. It flags stale PRs, PRs with no review after a day, oversized PRs, aging drafts, reviewers with a pile of requests, and abandoned branches.",
+    "shows": [
+      "Median time to first review and median cycle time (opened to merged)",
+      "Stale pull requests: no update for 3 days",
+      "Pull requests with no review a day after opening",
+      "Oversized pull requests: more than 1,000 changed lines",
+      "Drafts older than 7 days, and branches with no commits for 30 days and no PR",
+      "Review bottlenecks: people with 3 or more pending review requests"
+    ],
+    "how": [
+      "Whoships reads open and recently merged pull requests with their reviews. Time to first review runs from opening to the first review by someone other than the author; cycle time runs from opening to merge. Both are medians, so one old pull request doesn't skew them.",
+      "The thresholds (3 days for stale, 7 for aging drafts, 30 for abandoned branches, 1,000 lines for oversized) can be changed in Settings › Rules."
+    ],
+    "access": "Your GitHub sign-in with the <code>repo</code> and <code>read:org</code> scopes.",
+    "faq": [
+      ["What is a good time to first review?", "Many teams aim for the same working day. What matters most is the trend: if the median keeps rising, reviews are becoming the bottleneck."],
+      ["How is cycle time measured?", "From the moment a pull request is opened to the moment it is merged, as a median over recently merged pull requests in the watched repositories."],
+      ["Does Whoships need a separate metrics tool for this?", "No. It computes everything from GitHub's API on your Mac. There is no server, no account and nothing to install in your repositories."]
+    ]
+  },
+  {
+    "key": "delivery",
+    "slug": "dora-metrics",
+    "name": "Delivery (DORA)",
+    "refresh": "60 minutes",
+    "title": "DORA Metrics from GitHub, on Your Mac | Whoships",
+    "description": "Whoships measures the four DORA metrics from GitHub: deploy frequency, lead time, change failure rate and time to restore, per repo, with no server.",
+    "h1": "DORA metrics from GitHub, without a metrics platform",
+    "answer": "The Delivery watcher measures the four DORA metrics for your GitHub organization: deployment frequency, lead time for changes, change failure rate and time to restore. It works them out per repository and overall from data already in GitHub, with the DORA performance band for each, and needs no server, agent or pipeline change.",
+    "shows": [
+      "Deploys per week, with the change against the previous period",
+      "Lead time for changes, change failure rate and time to restore",
+      "The DORA band (Elite, High, Medium or Low) overall and per repository",
+      "Which source each repository's deploys come from: Deployments, releases or merges",
+      "Deploys that needed a fix, and how long it took to restore"
+    ],
+    "how": [
+      "Deploys come from GitHub Deployments to a production environment when a repository uses them, else from releases, else from merges into a production branch (<code>main</code>, <code>master</code>, <code>production</code>, <code>prod</code> or <code>release/*</code> by default).",
+      "A deploy counts as failed when a hotfix or revert lands within 24 hours after it, and time to restore runs until that fix ships. Lead time runs from a pull request's first commit to the deploy that shipped it. Branches, environments and hotfix patterns are in Settings › Rules."
+    ],
+    "access": "Your GitHub sign-in with the <code>repo</code> and <code>read:org</code> scopes. No changes to your repositories or CI.",
+    "faq": [
+      ["Do I need GitHub Deployments for DORA metrics?", "No. Whoships uses Deployments when a repository has them, and falls back to releases or to merges into a production branch. The card shows which source each repository uses."],
+      ["How does Whoships know a deploy failed?", "When a hotfix or a revert lands within 24 hours of a deploy. Hotfixes are recognized by branch name, label or title, and you can change the patterns to match your team."],
+      ["Is this as accurate as a dedicated DORA platform?", "It is a good estimate from GitHub data alone. Platforms that connect to your incident tracker and CI pipelines can measure failures and restores more precisely. See <a href=\"/compare/whoships-vs-engineering-metrics-platforms/\">when a platform is the better choice</a>."]
+    ]
+  },
+  {
+    "key": "security",
+    "slug": "security-alerts",
+    "name": "Security",
+    "refresh": "60 minutes",
+    "title": "Dependabot and Security Alerts for an Org | Whoships",
+    "description": "Whoships gathers Dependabot, code scanning and secret scanning alerts, unprotected branches and new collaborators across your GitHub org, on your Mac.",
+    "h1": "Security alerts across your whole GitHub organization",
+    "answer": "The Security watcher gathers the security problems in your GitHub organization in one card: Dependabot, code scanning and secret scanning alerts, default branches with no protection or weak protection, merges without an approving review, and new outside collaborators and members.",
+    "shows": [
+      "High and critical Dependabot, code scanning and secret scanning alerts",
+      "Default branches with no protection, or with gaps such as no required review, no required checks, or force pushes allowed",
+      "Pull requests merged without approval in the last 7 days",
+      "New outside collaborators and new organization members"
+    ],
+    "how": [
+      "Whoships reads the alerts GitHub's security features already raise, and checks branch protection rules and rulesets on each watched repository's default branch. It doesn't scan code itself."
+    ],
+    "access": "Security alerts need the features enabled on the repositories and security manager or admin access. Outside collaborators need organization admin access. Whoships shows what it can read and notes what it couldn't.",
+    "faq": [
+      ["Why does the card say some alerts are missing?", "GitHub only shows security alerts to people with access to them, usually admins and security managers, and only on repositories where the features are on. Whoships lists the repositories it couldn't read in the card's notes."],
+      ["Does Whoships scan my code?", "No. It shows the alerts GitHub's own Dependabot, code scanning and secret scanning have raised, alongside branch protection gaps."],
+      ["Does it need GitHub Advanced Security?", "Dependabot alerts are free on GitHub. Code scanning and secret scanning on private repositories need GitHub's paid security products; without them, those alerts are simply empty."]
+    ]
+  },
+  {
+    "key": "ciHealth",
+    "slug": "github-actions-failures",
+    "name": "CI health",
+    "refresh": "60 minutes",
+    "title": "Find Flaky and Failing GitHub Actions | Whoships",
+    "description": "Whoships finds flaky GitHub Actions workflows, failure rates, slower runs, runner queue time and offline self-hosted runners in your org, on your Mac.",
+    "h1": "Flaky, failing and slow GitHub Actions workflows",
+    "answer": "The CI health watcher shows how GitHub Actions is doing across your organization: the success rate over 7 days, workflows that fail often, flaky workflows that pass only on retry, workflows that got slower, time spent waiting for runners, offline self-hosted runners, and where CI time goes.",
+    "shows": [
+      "Success rate over 7 days, runs that passed only on retry, median run time and runner queue time",
+      "Workflows with a high failure rate",
+      "Flaky workflows: a commit that failed and then passed, or a re-run that passed",
+      "Workflows whose recent successful runs are 30% slower than before",
+      "Offline self-hosted runners, and the workflows that use the most CI time or billed minutes"
+    ],
+    "how": [
+      "Whoships reads the last week of workflow runs in the watched repositories. A workflow is flaky when at least two runs passed only after failing on the same commit or on a re-run. Slower means the median of the last 10 successful runs is 30% above the runs before them.",
+      "For each failed job on your own pull requests, Whoships also works out why it failed from the failed step and the end of the log: tests, lint, type check, build, timeout, out of disk, out of memory, network, access denied and more."
+    ],
+    "access": "Your GitHub sign-in with the <code>repo</code> scope. Self-hosted runners need organization admin access, and billed minutes need owner or billing manager access.",
+    "faq": [
+      ["How does Whoships decide a workflow is flaky?", "When at least two runs in a week passed only on retry: the same commit failed and then passed, or a re-run attempt succeeded. Five or more raise it to a warning."],
+      ["Does it work with self-hosted runners?", "Yes. Runs on self-hosted runners are counted like any other, and with organization admin access Whoships also shows runners that are offline."],
+      ["Does Whoships download all my CI logs?", "Only the log of a failed job on your own pull requests, once, to find the reason it failed. The result is kept on your Mac and the log isn't stored."]
+    ]
+  }
+]

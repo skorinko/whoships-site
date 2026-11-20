@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+<article class="doc">
+  <h1>{{ h1 or title }}</h1>
+  {{ content | safe }}
+  {%- if faqItems %}
+  <h2>Questions</h2>
+  {% include "faq.njk" %}
+  {%- endif %}
+  {%- if updated %}
+  <p class="updated">{{ t.lastUpdated }}: {{ updated | localDate("en") }}</p>
+  {%- endif %}
+</article>
+{% include "facts.njk" %}
+{% include "band.njk" %}

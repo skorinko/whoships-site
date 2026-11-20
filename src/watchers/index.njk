@@ -1,0 +1,28 @@
+---
+permalink: /watchers/
+pageKey: watchers
+title: "Whoships Watchers: 10 Views of Your GitHub Org"
+description: "The ten Whoships watchers: what needs you, what you're waiting on, attention, team activity, flow health, DORA, security and CI health."
+crumbs: [{ name: "Watchers" }]
+updated: "2026-11-20"
+placement: watchers
+---
+<article class="doc">
+  <h1>Ten watchers for your GitHub organization</h1>
+  <p class="answer">A watcher is one question Whoships keeps answering about your GitHub organization, like “what needs my review?” or “which workflows are flaky?”. Each one refreshes on its own schedule and shows as a widget, a desktop dashboard card, and, for the first three, in the menu bar.</p>
+  <div class="table"><table>
+    <thead><tr><th scope="col">Watcher</th><th scope="col">Answers</th><th scope="col">Refresh</th></tr></thead>
+    <tbody>
+      {%- for w in watchers %}
+      <tr><th scope="row"><a href="/watchers/{{ w.slug }}/">{{ w.name }}</a></th><td>{{ w.h1 }}</td><td>{{ w.refresh }}</td></tr>
+      {%- endfor %}
+    </tbody>
+  </table></div>
+  <h2>Where do watchers show?</h2>
+  <p>On the <a href="/github-dashboard-mac/">desktop dashboard</a> as cards, in <a href="/github-widgets-mac/">widgets</a> (one watcher per widget, two in extra large, or “Most urgent”), and in the <a href="/github-menu-bar-app-mac/">menu bar</a>, which shows Needs me, I'm waiting on and Attention.</p>
+  <h2>How much of GitHub's API do they use?</h2>
+  <p>About 400 of GitHub's 5,000 API points an hour for a typical organization. Requests for unchanged data cost nothing, and the hourly watchers pause if the remaining budget runs low.</p>
+  <p class="updated">{{ t.lastUpdated }}: {{ updated | localDate("en") }}</p>
+</article>
+{% include "facts.njk" %}
+{% include "band.njk" %}

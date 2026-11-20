@@ -1,0 +1,32 @@
+---
+permalink: /robots.txt
+layout: false
+eleventyExcludeFromCollections: true
+---
+# Whoships welcomes search engines and AI assistants: everything here is public product information.
+User-agent: *
+Allow: /
+Disallow: /_e/
+
+# Search and AI crawlers, listed explicitly so blanket "block AI" rules elsewhere don't apply by accident.
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: DuckDuckBot
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: CCBot
+User-agent: Meta-ExternalAgent
+User-agent: MistralAI-User
+Allow: /
+Disallow: /_e/
+
+Sitemap: {{ site.url }}/sitemap.xml

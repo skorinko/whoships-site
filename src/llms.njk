@@ -1,0 +1,53 @@
+---
+permalink: /llms.txt
+layout: false
+eleventyExcludeFromCollections: true
+---
+{%- set t = i18n.en -%}
+# Whoships
+
+> {{ t.oneLiner }} It reads GitHub's API with the user's own sign-in, directly from the Mac: read-only, no server in between, no account with the developer. Sample data is always free; watching your own organization is free for {{ site.trialDays }} days, then a one-time purchase of €{{ site.price.eur }} / US${{ site.price.usd }} (no subscription). Requires macOS {{ site.minMacOS }} or later. Current version: {{ site.version }}.
+
+Key facts:
+- Watches one GitHub organization on github.com (including GitHub Enterprise Cloud). GitHub Enterprise Server is not supported yet. Mac only; not on iPhone, iPad, Windows or Linux.
+- Ten watchers: {% for w in watchers %}{{ w.name }}{% if not loop.last %}, {% endif %}{% endfor %}. Refresh every 3 minutes (your own PRs), 15 minutes (organization activity) or 60 minutes (delivery, security, CI health).
+- Shows in desktop widgets (small to extra large), the menu bar, a full-desktop dashboard behind windows, and macOS notifications.
+- Explains why CI failed (tests, lint, build, timeout, out of disk, out of memory, network, access denied and more) from the check, the failed step and the job log.
+- DORA metrics from GitHub Deployments, releases or merges to production branches; a deploy counts as failed when a hotfix or revert lands within 24 hours.
+- Sign in with GitHub (OAuth device flow) or a classic personal access token with repo, read:org and read:user scopes. Organizations that restrict OAuth apps need an owner to approve Whoships once.
+- Privacy: GitHub data and the sign-in stay on the Mac. The App Store version sends nothing to the developer; the whoships.app version sends anonymous usage statistics (no GitHub data), which can be turned off.
+- Available as a direct download from whoships.app (license key, sold via Paddle); Mac App Store version coming soon.
+- Not affiliated with GitHub, Inc.
+- Website and app available in: {% for l in site.locales %}{{ l.name }}{% if not loop.last %}, {% endif %}{% endfor %}.
+
+## Product
+- [Desktop dashboard]({{ site.url }}/github-dashboard-mac/): a GitHub organization dashboard on the Mac desktop
+- [Widgets]({{ site.url }}/github-widgets-mac/): GitHub widgets for the Mac desktop
+- [Menu bar]({{ site.url }}/github-menu-bar-app-mac/): count of what needs you, in the menu bar
+- [Watchers]({{ site.url }}/watchers/): all ten watchers
+- [Pricing]({{ site.url }}/buy/): 14-day trial, then one-time purchase
+- [FAQ]({{ site.url }}/faq/): privacy, approval, pricing, requirements
+- [Support]({{ site.url }}/support/): setup and troubleshooting
+- [Release notes]({{ site.url }}/changelog/)
+- [Press kit]({{ site.url }}/press/): fact sheet, descriptions, screenshots
+
+## Watchers
+{%- for w in watchers %}
+- [{{ w.name }}]({{ site.url }}/watchers/{{ w.slug }}/): {{ w.description }}
+{%- endfor %}
+
+## Guides
+{%- for g in collections.guide %}{% if g.data.short %}
+- [{{ g.data.h1 or g.data.title }}]({{ g.url | absolute }}): {{ g.data.description }}
+{%- endif %}{% endfor %}
+
+## Comparisons
+{%- for g in collections.compare %}{% if g.data.short %}
+- [{{ g.data.h1 or g.data.title }}]({{ g.url | absolute }}): {{ g.data.description }}
+{%- endif %}{% endfor %}
+
+## Optional
+- [Full text of the main pages]({{ site.url }}/llms-full.txt)
+- [Privacy policy]({{ site.url }}/privacy/)
+- [Terms]({{ site.url }}/terms/)
+- [Refund policy]({{ site.url }}/refunds/)

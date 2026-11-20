@@ -1,0 +1,23 @@
+---
+permalink: /sitemap.xml
+layout: false
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- for p in collections.all | sort(false, false, "url") %}
+{%- if not p.data.noindex and p.url and p.url.endsWith("/") %}
+  <url>
+    <loc>{{ p.url | absolute }}</loc>
+    <lastmod>{{ (p.data.updated or site.versionDate) | isoDate }}</lastmod>
+    {%- set alts = collections.all | alternates(p.data.locale.pageKey or p.data.pageKey) %}
+    {%- if alts.length > 1 %}
+    {%- for a in alts %}
+    <xhtml:link rel="alternate" hreflang="{{ a.hreflang }}" href="{{ a.url | absolute }}"/>
+    {%- endfor %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ alts[0].url | absolute }}"/>
+    {%- endif %}
+  </url>
+{%- endif %}
+{%- endfor %}
+</urlset>

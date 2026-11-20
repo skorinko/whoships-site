@@ -1,0 +1,45 @@
+---
+permalink: /press/
+pageKey: press
+title: "Whoships Press Kit: Facts, Screenshots and Icon"
+description: "Press kit for Whoships, the Mac app that shows a GitHub organization's PRs, CI and DORA metrics on the desktop: fact sheet, descriptions, images."
+schema: ["home"]
+crumbs: [{ name: "Press kit" }]
+---
+<article class="doc">
+  <h1>Press kit</h1>
+  <p class="answer">{{ t.oneLiner }}</p>
+
+  <h2>Fact sheet</h2>
+  <div class="table"><table>
+    <tbody>
+      <tr><th scope="row">Name</th><td>Whoships (App Store: “{{ site.appStoreName }}”)</td></tr>
+      <tr><th scope="row">Developer</th><td>{{ site.author }}, independent developer, Spain</td></tr>
+      <tr><th scope="row">Platform</th><td>Mac, macOS {{ site.minMacOS }} or later</td></tr>
+      <tr><th scope="row">Current version</th><td>{{ site.version }} (<a href="/changelog/">release notes</a>)</td></tr>
+      <tr><th scope="row">What it does</th><td>Keeps one GitHub organization's pulse in front of you: what needs your review, what you're waiting on, who is working on what, and what's on fire, plus flow health, DORA delivery metrics, security alerts and CI health.</td></tr>
+      <tr><th scope="row">Where it shows</th><td>Desktop widgets from small to extra large, the menu bar, a dashboard that fills the desktop behind your windows, and notifications</td></tr>
+      <tr><th scope="row">How</th><td>Reads GitHub's API with the user's own sign-in, on the Mac. Read-only. No server, no account with us; the sign-in stays in the keychain.</td></tr>
+      <tr><th scope="row">Watchers</th><td>{% for w in watchers %}{{ w.name }}{% if not loop.last %}, {% endif %}{% endfor %}</td></tr>
+      <tr><th scope="row">App languages</th><td>{% for l in site.locales %}{{ l.name }}{% if not loop.last %}, {% endif %}{% endfor %}</td></tr>
+      <tr><th scope="row">Price</th><td>Free download; sample data always free; {{ site.trialDays }}-day free trial with your own organization; then Whoships Lifetime, €{{ site.price.eur }} / US${{ site.price.usd }} one-time. No subscription.</td></tr>
+      <tr><th scope="row">Availability</th><td>Direct download from whoships.app; Mac App Store coming soon</td></tr>
+      <tr><th scope="row">Contact</th><td><a href="mailto:{{ site.supportEmail }}">{{ site.supportEmail }}</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Short description (25 words)</h2>
+  <p>Whoships puts your GitHub organization on your Mac desktop: pull requests waiting for you, red CI with the reason, DORA metrics and security alerts, in widgets.</p>
+
+  <h2>Long description</h2>
+  <p>Engineering leads keep twenty browser tabs open to know what is going on in their GitHub organization. Whoships replaces them with ten watchers that live on the Mac desktop. Needs me lists the reviews waiting for you and your pull requests with failed CI, with the reason worked out from the job log. Attention flags red CI on main, force pushes and unreviewed merges across the organization. Flow health, Delivery (DORA), Security and CI health give team leads and CTOs cycle time, the four DORA metrics, Dependabot and code scanning alerts, and flaky workflows.</p>
+  <p>Everything shows in widgets from small to extra large, a menu bar count, and a dashboard that sits on the wallpaper behind your windows. Whoships reads GitHub directly from the Mac, read-only, with no server in between. It can be tried with sample data and no account, is free for 14 days with your own organization, and then costs a one-time €{{ site.price.eur }}.</p>
+
+  <h2>Screenshots and icon</h2>
+  <ul>
+    <li><a href="/assets/dashboard.png">The desktop dashboard with sample data</a> (PNG, 2880×1800)</li>
+    <li><a href="/assets/widgets.png">Widgets on the desktop with sample data</a> (PNG, 2880×1800)</li>
+    <li><a href="/assets/icon.png">App icon</a> (PNG, 512×512)</li>
+  </ul>
+  <p class="small">You may use these images to write about Whoships. Please don't alter the icon. All screenshots show a made-up organization.</p>
+</article>

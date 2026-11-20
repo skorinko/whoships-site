@@ -1,0 +1,231 @@
+{
+  "oneLiner": "Whoships ist eine Mac-App, die Pull Requests, CI, Reviews und DORA-Metriken deiner GitHub-Organisation in Schreibtisch-Widgets, in der Menüleiste und in einem Schreibtisch-Dashboard zeigt.",
+  "skip": "Zum Inhalt springen",
+  "nav": {
+    "widgets": "Widgets",
+    "dashboard": "Dashboard",
+    "menubar": "Menüleiste",
+    "watchers": "Wächter",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "support": "Support"
+  },
+  "footer": {
+    "home": "Startseite",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "support": "Support",
+    "watchers": "Wächter",
+    "guides": "Anleitungen",
+    "compare": "Vergleiche",
+    "changelog": "Neuigkeiten",
+    "press": "Pressematerial",
+    "terms": "Nutzungsbedingungen",
+    "refunds": "Rückerstattungsrichtlinie",
+    "privacy": "Datenschutzerklärung",
+    "languageLabel": "Sprache",
+    "trademark": "GitHub ist eine Marke von GitHub, Inc. Whoships steht in keiner Verbindung zu GitHub."
+  },
+  "cta": {
+    "download": "Download für Mac",
+    "pricing": "€19.99 einmalig · Preise",
+    "note": "14 Tage kostenlos mit deiner eigenen Organisation, danach ein einmaliger Kauf. Kein Abo. Erfordert macOS 26 oder neuer. Bald im Mac App Store.",
+    "appStoreAlt": "Laden im Mac App Store",
+    "bandTitle": "Der Puls deiner Organisation auf deinem Schreibtisch",
+    "bandText": "Lade Whoships und teste es sofort mit Beispieldaten, ganz ohne Account. Deine eigene Organisation beobachtest du 14 Tage kostenlos."
+  },
+  "facts": {
+    "title": "Whoships auf einen Blick",
+    "rows": [
+      ["Was es ist", "Eine Mac-App, die Pull Requests, Reviews, CI, Sicherheit und Delivery einer GitHub-Organisation immer im Blick behält."],
+      ["Wächter", "Braucht mich, Ich warte auf, Achtung, Wer macht was, Aktive Repos, Aktive Personen, Flow-Gesundheit, Delivery (DORA), Sicherheit und CI-Gesundheit. Sie aktualisieren sich alle 3, 15 oder 60 Minuten."],
+      ["Wo es erscheint", "Schreibtisch-Widgets in allen Größen, die Menüleiste, ein Dashboard über den ganzen Schreibtisch und Mitteilungen."],
+      ["Preis", "Beispieldaten sind immer kostenlos. Deine eigene Organisation beobachtest du 14 Tage kostenlos, danach einmalig €19.99 / US$19.99. Kein Abo."],
+      ["Voraussetzungen", "macOS 26 oder neuer und ein GitHub-Account mit Zugriff auf die Organisation auf github.com."],
+      ["Datenschutz", "Nur die App spricht mit GitHub. Deine Anmeldung bleibt im Schlüsselbund deines Macs und deine GitHub-Daten bleiben auf deinem Mac. Die App-Store-Version sendet uns nichts; die Version von whoships.app sendet anonyme Nutzungsstatistiken, die du abschalten kannst."],
+      ["Sprachen", "Englisch, Deutsch, Spanisch, Französisch, Italienisch, Japanisch, Koreanisch, Portugiesisch (Brasilien und Portugal) und Chinesisch (vereinfacht und traditionell)."]
+    ]
+  },
+  "breadcrumbHome": "Startseite",
+  "lastUpdated": "Zuletzt aktualisiert",
+  "englishOnly": "auf Englisch",
+  "watcherNames": {
+    "myActions": "Braucht mich",
+    "myWaiting": "Ich warte auf",
+    "globalAttention": "Achtung",
+    "whoIsWorking": "Wer macht was",
+    "activeRepos": "Aktive Repos",
+    "activeDevs": "Aktive Personen",
+    "flowHealth": "Flow-Gesundheit",
+    "delivery": "Delivery (DORA)",
+    "security": "Sicherheit",
+    "ciHealth": "CI-Gesundheit"
+  },
+  "home": {
+    "title": "Whoships: GitHub-Dashboard und Widgets für den Mac",
+    "description": "Whoships zeigt Pull Requests, CI, Reviews und DORA-Metriken deiner GitHub-Organisation in Mac-Widgets, in der Menüleiste und als Dashboard.",
+    "h1": "Sieh auf deinem Schreibtisch, wer was ausliefert",
+    "lead": "Whoships zeigt, was dich braucht, worauf du wartest, wer woran arbeitet und wo es in deiner GitHub-Organisation brennt: in Widgets, in der Menüleiste und in einem Dashboard über den ganzen Schreibtisch.",
+    "iconAlt": "App-Symbol von Whoships",
+    "shotDashboardAlt": "Das Whoships-Dashboard auf dem Schreibtisch: Karten für das, was dich braucht, Achtung, Sicherheit, CI-Gesundheit, Flow-Gesundheit und Delivery",
+    "shotWidgetsAlt": "Whoships-Widgets auf dem Mac-Schreibtisch",
+    "cards": [
+      ["Was dich braucht", "Reviews, die von dir angefordert sind, deine PRs mit fehlgeschlagener CI samt Grund, Merge-Konflikte und PRs, die bereit zum Mergen sind."],
+      ["Wo es brennt", "Rote CI auf main, Force-Pushes und direkte Pushes auf geschützte Branches, Merges ohne Review, Hotfixes in Produktion."],
+      ["Wer macht was", "Die Branches, offenen PRs und Tickets jeder Person und was sie ausgeliefert hat, dazu die aktivsten Repos und Personen."],
+      ["Für Teamleads und CTOs", "Flow-Gesundheit, DORA-Metriken, Sicherheitswarnungen und CI-Gesundheit, von liegengebliebenen PRs bis zu wackeligen Workflows."],
+      ["Gemacht für den Mac", "Widgets in allen Größen, eine Übersicht in der Menüleiste, ein Dashboard über den ganzen Schreibtisch, Mitteilungen, hell und dunkel."],
+      ["Privat", "Whoships liest deine Organisation direkt bei GitHub. Deine Anmeldung bleibt in deinem Schlüsselbund und deine GitHub-Daten bleiben auf deinem Mac."]
+    ],
+    "whereTitle": "Drei Orte, an denen du es siehst",
+    "where": [
+      ["Schreibtisch-Dashboard", "Karten füllen deinen Schreibtisch hinter deinen Fenstern, das Dringendste zuerst.", "dashboard"],
+      ["Widgets", "Von klein bis extragroß, jedes mit dem Wächter deiner Wahl oder dem, was gerade am dringendsten ist.", "widgets"],
+      ["Menüleiste", "Die Zahl der Dinge, die dich brauchen, einen Klick von den vollständigen Listen entfernt.", "menubar"]
+    ],
+    "watchersTitle": "Zehn Wächter für deine Organisation",
+    "watchersText": "Jeder Wächter beantwortet eine Frage zu deiner Organisation und aktualisiert sich in seinem eigenen Takt.",
+    "howTitle": "So funktioniert es",
+    "howSteps": [
+      "Lade Whoships und klicke auf „Mit Beispieldaten testen“, um alles mit einer erfundenen Organisation zu sehen.",
+      "Melde dich mit GitHub an oder füge ein Personal Access Token ein und wähle die Organisation, die du beobachten willst.",
+      "Füge Widgets über „Widgets bearbeiten“ hinzu und schalte das Schreibtisch-Dashboard in der Menüleiste ein."
+    ],
+    "faqTitle": "Fragen",
+    "faqMore": "Weitere Fragen und Antworten"
+  },
+  "hubs": {
+    "widgets": {
+      "title": "GitHub-Widgets für den Mac: PRs, CI, Reviews | Whoships",
+      "description": "Hol dir Pull Requests, Reviews und CI deiner GitHub-Organisation mit Whoships-Widgets in jeder Größe auf den Mac-Schreibtisch. Gratis mit Beispieldaten.",
+      "h1": "GitHub-Widgets für deinen Mac-Schreibtisch",
+      "answer": "GitHub hat keine eigenen Mac-Widgets. Whoships liefert sie: Widgets für den Schreibtisch und die Mitteilungszentrale in klein, mittel, groß und extragroß. Sie zeigen Pull Requests, Reviews, CI und Warnungen deiner GitHub-Organisation und aktualisieren sich, solange Whoships läuft.",
+      "image": "widgets",
+      "imageAlt": "Whoships-Widgets auf dem Mac-Schreibtisch: Braucht mich, Achtung, Flow-Gesundheit, Sicherheit und CI-Gesundheit",
+      "sections": [
+        ["Was kann ein GitHub-Widget zeigen?", "<p>Jedes Widget zeigt einen Wächter: Braucht mich, Ich warte auf, Achtung, Wer macht was, Aktive Repos, Aktive Personen, Flow-Gesundheit, Delivery (DORA), Sicherheit oder CI-Gesundheit. Oder du wählst „Am dringendsten“: Dann folgt es dem Wächter mit dem schwersten Eintrag. Das extragroße Widget zeigt zwei Wächter nebeneinander.</p>"],
+        ["Wie füge ich ein GitHub-Widget auf meinem Mac hinzu?", "<ol><li><a href=\"/download\" data-track=\"download\" data-placement=\"hub_widgets\">Lade Whoships</a>, öffne es und melde dich mit GitHub an, oder wähle „Mit Beispieldaten testen“.</li><li>Klicke bei gedrückter Control-Taste auf den Schreibtisch und wähle „Widgets bearbeiten“.</li><li>Suche nach Whoships und zieh ein Widget auf den Schreibtisch.</li><li>Um ein Widget auf einen Wächter festzulegen, klicke es bei gedrückter Control-Taste an und wähle „Whoships“ bearbeiten.</li></ol>"],
+        ["Aktualisieren sich die Widgets von selbst?", "<p>Ja, jedes Mal, wenn Whoships aktualisiert: deine eigenen Pull Requests alle 3 Minuten, die Aktivität der Organisation alle 15 Minuten und Delivery, Sicherheit und CI-Gesundheit jede Stunde. Damit Whoships läuft, schalte Einstellungen › Allgemein › Beim Anmelden öffnen ein.</p>"],
+        ["Kann ich direkt im Widget auf einen Eintrag reagieren?", "<p>Klicke auf eine Zeile, um den Pull Request, den Lauf oder die Warnung auf GitHub zu öffnen. Die runde Taste oben rechts schaltet das Widget zum nächsten Wächter, und die Glocke stellt einen Eintrag für einen Tag zurück.</p>"]
+      ],
+      "faq": [
+        ["Sind die Widgets interaktiv?", "Ja. Zeilen öffnen sich auf GitHub, die Umschalttaste wechselt den Wächter, und die Glocke stellt einen Eintrag für einen Tag zurück, alles ohne die App zu öffnen."],
+        ["Warum sind meine Widgets abgedunkelt?", "macOS dunkelt Schreibtisch-Widgets ab, solange eine andere App im Vordergrund ist. Das änderst du unter Systemeinstellungen › Schreibtisch & Dock › Widgets auf dem Schreibtisch abdunkeln."],
+        ["Funktionieren die Widgets in der Mitteilungszentrale?", "Ja. Füge sie über „Widgets bearbeiten“ in der Mitteilungszentrale hinzu, genauso wie auf dem Schreibtisch."]
+      ]
+    },
+    "menubar": {
+      "title": "GitHub-Menüleisten-App für den Mac: PRs, Reviews | Whoships",
+      "description": "Whoships zeigt in deiner Mac-Menüleiste, wie viele GitHub Pull Requests und Reviews dich brauchen, einen Klick von der Liste entfernt. Kostenlos testen.",
+      "h1": "Eine GitHub-Menüleisten-App für deine ganze Organisation",
+      "answer": "Whoships zeigt in der Menüleiste deines Macs die Zahl der Dinge, die dich brauchen: Review-Anfragen, deine Pull Requests mit fehlgeschlagener CI oder Konflikten und PRs, die bereit zum Mergen sind. Ein Klick zeigt Braucht mich, Ich warte auf und Achtung für deine GitHub-Organisation, ganz ohne Browser.",
+      "image": "dashboard",
+      "imageAlt": "Whoships-Karten für Braucht mich, Ich warte auf und Achtung, wie im Popover der Menüleiste und im Dashboard",
+      "sections": [
+        ["Was zeigt die Menüleiste?", "<p>Das Symbol zeigt die Zahl der Einträge in Braucht mich. Sein Popover listet Braucht mich, Ich warte auf und Achtung, die drei Wächter, die du tagsüber am häufigsten prüfst. Jede Zeile öffnet den Pull Request oder Lauf auf GitHub.</p>"],
+        ["Was ist anders als bei GitHub-Benachrichtigungen?", "<p>GitHub-Benachrichtigungen sind ein Feed mit allem, was passiert ist. Whoships zeigt stattdessen den aktuellen Stand: was in einer Organisation gerade noch auf dich wartet, mit dem Grund, warum ein Check fehlgeschlagen ist. Erledigte Einträge verschwinden aus der Liste.</p>"],
+        ["Bekomme ich Mitteilungen?", "<p>Wenn du Mitteilungen erlaubst, meldet Whoships neue Einträge ab der Stufe Warnung oder ab der Stufe, die du wählst. Die erste Aktualisierung nach dem Start merkt sich nur, was schon da ist, damit alte Warnungen nicht erneut kommen.</p>"],
+        ["Wie richte ich es ein?", "<ol><li><a href=\"/download\" data-track=\"download\" data-placement=\"hub_menubar\">Lade Whoships</a> und öffne es.</li><li>Melde dich mit GitHub an und wähle deine Organisation.</li><li>Das Whoships-Symbol erscheint in der Menüleiste. Schalte Einstellungen › Allgemein › Beim Anmelden öffnen ein, damit es dort bleibt.</li></ol>"]
+      ],
+      "faq": [
+        ["Bleibt Whoships im Dock?", "Nur solange eines seiner Fenster offen ist und Einstellungen › Allgemein › Im Dock anzeigen eingeschaltet ist. Mit geschlossenen Fenstern läuft Whoships in der Menüleiste weiter, und Widgets und Dashboard bleiben aktuell."],
+        ["Zeigt es persönliche Repositorys?", "Whoships beobachtet eine Organisation. Persönliche Repositorys außerhalb einer Organisation sind nicht dabei."],
+        ["Wie viel GitHub-API-Budget verbraucht es?", "Bei einer typischen Organisation etwa 400 Punkte pro Stunde, weit unter den 5.000 pro Stunde von GitHub. Aufwendigere Aktualisierungen pausieren, wenn das restliche Budget knapp wird."]
+      ]
+    },
+    "dashboard": {
+      "title": "GitHub-Dashboard auf dem Mac-Schreibtisch | Whoships",
+      "description": "Whoships macht deinen Mac-Schreibtisch zum Live-Dashboard deiner GitHub-Organisation: Karten für PRs, CI, Sicherheit und DORA hinter deinen Fenstern.",
+      "h1": "Ein Dashboard deiner GitHub-Organisation auf dem Schreibtisch",
+      "answer": "Whoships kann den Schreibtisch deines Macs mit einem Live-Dashboard deiner GitHub-Organisation füllen. Karten für das, was dich braucht, Achtung, Flow-Gesundheit, Delivery, Sicherheit und CI-Gesundheit liegen auf deinem Hintergrundbild hinter deinen Fenstern, das Dringendste zuerst. Ein Blick auf den Schreibtisch zeigt dir, wie es um die Organisation steht.",
+      "image": "dashboard",
+      "imageAlt": "Das Whoships-Schreibtisch-Dashboard: Karten für Braucht mich, Achtung, Sicherheit, CI-Gesundheit, Flow-Gesundheit und Delivery auf dem Hintergrundbild",
+      "sections": [
+        ["Wie funktioniert das Schreibtisch-Dashboard?", "<p>Whoships legt auf jeden Bildschirm ein randloses Fenster auf Schreibtischebene, wie ein Live-Hintergrundbild. Karten füllen den Bildschirm in Spalten, nach Dringlichkeit sortiert oder in deiner Reihenfolge. Deine Fenster bleiben darüber.</p>"],
+        ["Kann ich die Karten anklicken?", "<p>Du wählst, ob das Dashboard über deinen Schreibtischsymbolen liegt, wo seine Zeilen anklickbar sind und sich auf GitHub öffnen, oder darunter, nur zum Ansehen. Öffne die vollständige Liste einer Karte, um sie zu filtern oder Einträge zurückzustellen.</p>"],
+        ["Welche Karten kann es zeigen?", "<p>Jeden der zehn Wächter: Braucht mich, Ich warte auf, Achtung, Wer macht was, Aktive Repos, Aktive Personen, Flow-Gesundheit, Delivery (DORA), Sicherheit und CI-Gesundheit. Blende die aus, die du nicht brauchst.</p>"],
+        ["Wie schalte ich es ein?", "<ol><li><a href=\"/download\" data-track=\"download\" data-placement=\"hub_dashboard\">Lade Whoships</a> und melde dich an oder teste es mit Beispieldaten.</li><li>Klicke auf das Whoships-Symbol in der Menüleiste.</li><li>Schalte „Schreibtisch-Dashboard“ ein.</li></ol>"]
+      ],
+      "faq": [
+        ["Funktioniert es mit mehreren Bildschirmen?", "Ja. Das Dashboard erscheint auf jedem Bildschirm, hinter deinen Fenstern."],
+        ["Macht es meinen Mac langsamer?", "Nein. Das Dashboard zeichnet sich nur neu, wenn Whoships aktualisiert. Die Daten werden im Hintergrund nach Zeitplan geladen."],
+        ["Ersetzt es ein Team-Dashboard auf einem Fernseher?", "Es ist eine persönliche Ansicht auf deinem eigenen Mac. Für einen gemeinsamen Bildschirm lass Whoships auf dem Mac laufen, der den Bildschirm ansteuert, und schalte das Schreibtisch-Dashboard ein."]
+      ]
+    }
+  },
+  "buy": {
+    "title": "Whoships Preise: 14 Tage gratis, dann einmal zahlen",
+    "description": "Teste Whoships 14 Tage kostenlos mit deiner eigenen GitHub-Organisation und kauf es dann einmalig für €19.99 / US$19.99. Kein Abo.",
+    "h1": "Kostenlos testen. Dann einmal zahlen.",
+    "lead": "Beobachte deine eigene GitHub-Organisation 14 Tage kostenlos, mit allem Drum und Dran. Danach hält Whoships Lifetime alles am Laufen: Widgets, Menüleiste, Schreibtisch-Dashboard und Mitteilungen. Kein Abo.",
+    "per": "Einmaliger Kauf nach einem kostenlosen 14-tägigen Test. Der Preis enthält MwSt. oder Umsatzsteuer, wo sie anfällt.",
+    "waiting": "Der Online-Kauf startet bald",
+    "tryFirst": "Der Download ist kostenlos: Starte den 14-tägigen Test in der App, sobald du deine Organisation gewählt hast. Beispieldaten sind immer kostenlos, ganz ohne GitHub-Account.",
+    "downloadLink": "<a href=\"/download\" data-track=\"download\" data-placement=\"buy_page\">Whoships für Mac laden</a> (macOS 26 oder neuer)",
+    "cards": [
+      ["14 Tage kostenlos", "Der Test beginnt, wenn du deine eigene Organisation beobachten willst, mit allen Funktionen. Zum Start brauchst du keine Karte."],
+      ["Was du bekommst", "Einen Lizenzschlüssel für Whoships Lifetime, direkt nach dem Kauf per E-Mail. Füge ihn in Whoships ein, um deine Organisation nach dem Test weiter zu beobachten."],
+      ["Alles inklusive", "Alle zehn Wächter: was dich braucht, Achtung, wer macht was, Flow-Gesundheit, DORA-Delivery, Sicherheit und CI-Gesundheit."],
+      ["Alle deine Macs", "Nutze deine Lizenz auf jedem Mac, den du persönlich verwendest."],
+      ["Updates inklusive", "Alle Updates für Whoships 1 sind inklusive und kommen direkt in der App."],
+      ["14 Tage Rückerstattung", "Nicht zufrieden? Du bekommst innerhalb von 14 Tagen nach dem Kauf den vollen Betrag zurück. Siehe <a href=\"/refunds/\">Rückerstattungsrichtlinie</a>."]
+    ],
+    "waysTitle": "Zwei Wege zum Kauf",
+    "wayWeb": "<strong>Über diese Website</strong>: Lade Whoships von whoships.app, teste es 14 Tage und schalte es mit einem Lizenzschlüssel frei. Unser Bestellprozess wird von unserem Online-Händler Paddle.com abgewickelt, der für diese Bestellungen als Merchant of Record (Verkäufer) auftritt.",
+    "wayStore": "<strong>Über den Mac App Store</strong> (bald verfügbar): Lade Whoships kostenlos, starte den 14-tägigen Test und kaufe Whoships Lifetime in der App. Apple wickelt diese Zahlung ab, und der Kauf lässt sich über die Familienfreigabe teilen.",
+    "smallKeys": "Ein Lizenzschlüssel schaltet die Version von whoships.app frei; ein Kauf im App Store schaltet die App-Store-Version frei. Käufe lassen sich nicht zwischen beiden übertragen.",
+    "smallTerms": "Erfordert macOS 26 oder neuer und einen GitHub-Account mit Zugriff auf die Organisation, die du beobachten willst. Jede Person braucht eine eigene Lizenz. Mit dem Kauf stimmst du den <a href=\"/terms/\">Nutzungsbedingungen</a> und der <a href=\"/refunds/\">Rückerstattungsrichtlinie</a> zu. Fragen: <a href=\"mailto:macapps.support@icloud.com\">macapps.support@icloud.com</a>.",
+    "js": {
+      "buy": "Whoships Lifetime kaufen",
+      "sandbox": "Sandbox-Modus: nur Testkäufe. Verwende die Karte 4242 4242 4242 4242.",
+      "thanks": "Danke! Dein Lizenzschlüssel ist unterwegs{to}. Er kommt meist innerhalb einer Minute an; schau in deinen Spam-Ordner, wenn du ihn nicht siehst. Klicke in Whoships auf „Lizenzschlüssel eingeben“ und füge ihn ein.",
+      "thanksTo": " an {email}",
+      "done": "Kauf abgeschlossen"
+    }
+  },
+  "support": {
+    "title": "Whoships Support: Einrichtung, Anmeldung, Widgets",
+    "description": "Hilfe zu Whoships: Anmeldung bei GitHub, Genehmigung durch die Organisation, Tokens, Widgets, Aktualisierung, Test, Lizenzschlüssel und Deinstallation.",
+    "h1": "Support",
+    "intro": "Fragen, Probleme oder Ideen: Schreib an <a href=\"mailto:macapps.support@icloud.com\">macapps.support@icloud.com</a>. Nenne deine macOS-Version und was du siehst.",
+    "sections": [
+      ["Erste Schritte", "<ol class=\"steps\"><li>Öffne Whoships. Klicke im Willkommensfenster auf <strong>Mit GitHub anmelden</strong>, kopiere den Code, füge ihn auf der GitHub-Seite ein, die sich öffnet, und klicke auf <strong>Authorize</strong>. Oder teste zuerst alles mit <strong>Mit Beispieldaten testen</strong>.</li><li>Wähle die Organisation, die du beobachten willst.</li><li>Widgets hinzufügen: Klicke bei gedrückter Control-Taste auf den Schreibtisch, wähle <strong>Widgets bearbeiten</strong>, suche nach <strong>Whoships</strong> und zieh ein Widget auf den Schreibtisch.</li><li>Für das Dashboard über den ganzen Schreibtisch klickst du auf das Whoships-Symbol in der Menüleiste und schaltest <strong>Schreibtisch-Dashboard</strong> ein.</li></ol>"],
+      ["„Warte darauf, dass deine Organisation Whoships genehmigt“", "<p>Viele Organisationen lassen nur genehmigte Apps ihre privaten Daten lesen. Whoships zeigt dann lieber nichts als falsche, leere Ergebnisse. Klicke auf dem Warte-Bildschirm auf <strong>Whoships auf GitHub öffnen</strong>, um Zugriff anzufragen, und schicke einem Owner der Organisation die fertige Nachricht von <strong>Nachricht für einen Owner kopieren</strong>. Owner genehmigen sie unter Organization settings › Third-party access › OAuth app policy. Whoships prüft alle zwei Minuten und legt von selbst los. Ein Personal Access Token ist von dieser Genehmigung nicht betroffen, falls dir das lieber ist.</p>"],
+      ["Mit einem Personal Access Token anmelden", "<p>Wähle im Willkommensfenster <strong>Token verwenden</strong>. Erstelle ein klassisches Token mit den Scopes <code>repo</code>, <code>read:org</code> und <code>read:user</code>. Nutzt deine Organisation Single Sign-on, klicke auf GitHub neben dem Token auf <strong>Configure SSO</strong> und autorisiere die Organisation.</p>"],
+      ["Widgets", "<ul><li>Jede Widget-Karte hat oben rechts eine runde Umschalttaste, die die nächste Liste zeigt. Um ein Widget auf eine Liste festzulegen, klicke es bei gedrückter Control-Taste an und wähle <strong>„Whoships“ bearbeiten</strong>.</li><li>Widgets aktualisieren sich, wenn Whoships aktualisiert, also lass es laufen: Einstellungen › Allgemein › <strong>Beim Anmelden öffnen</strong>.</li><li>macOS dunkelt Schreibtisch-Widgets ab, solange eine andere App im Vordergrund ist; das steuerst du unter Systemeinstellungen › Schreibtisch &amp; Dock › <strong>Widgets auf dem Schreibtisch abdunkeln</strong>.</li></ul>"],
+      ["Wie oft es aktualisiert", "<p>Deine eigenen PRs alle 3 Minuten, die Aktivität der Org alle 15 Minuten und Delivery, Sicherheit und CI-Gesundheit jede Stunde, weit unter dem stündlichen API-Limit von GitHub. Klicke auf die Aktualisieren-Taste, um sofort zu aktualisieren.</p>"],
+      ["Manche Karten zeigen „braucht Admin-Zugriff auf die Org“", "<p>Self-hosted Runner und externe Collaborators brauchen Admin-Zugriff auf die Organisation, die Abrechnung braucht Owner- oder Billing-Manager-Zugriff, und Sicherheitswarnungen brauchen aktivierte Funktionen und Zugriff darauf. Whoships zeigt alles andere und vermerkt, was es nicht lesen konnte.</p>"],
+      ["Kostenloser Test und Kauf", "<p>Beispieldaten sind immer kostenlos: Wähle <strong>Mit Beispieldaten testen</strong> für eine erfundene Organisation, ganz ohne GitHub-Account. Für deine eigene Organisation bietet Whoships direkt nach der Auswahl einen <strong>kostenlosen 14-tägigen Test</strong> an. Nach dem Test hält der einmalige Kauf <strong>Whoships Lifetime</strong> alles am Laufen, ohne Abo. Bis dahin bitten Menüleiste und Widgets dich zu kaufen, und es wird nichts von GitHub gelesen. Siehe <a href=\"{p}/buy/\">Preise</a>.</p>"],
+      ["Lizenzschlüssel (gekauft auf whoships.app)", "<ul><li><strong>Freischalten:</strong> Öffne Whoships, klicke auf <strong>Freischalten</strong>, füge den Lizenzschlüssel aus deiner Kauf-E-Mail ein und klicke auf <strong>Aktivieren</strong>.</li><li><strong>Ein weiterer Mac:</strong> Gib denselben Schlüssel auf jedem Mac ein, den du persönlich verwendest.</li><li><strong>Schlüssel verloren?</strong> Schreib uns von der Adresse, mit der du gekauft hast, und wir schicken ihn dir erneut.</li><li><strong>Rückerstattungen</strong> innerhalb von 14 Tagen: siehe <a href=\"/refunds/\">Rückerstattungsrichtlinie</a>.</li></ul>"],
+      ["Käufe im App Store", "<p>Im Mac App Store gekauft? Öffne auf einem anderen Mac oder nach einer Neuinstallation Einstellungen › Account und klicke auf <strong>Käufe wiederherstellen</strong>. Der Test und Whoships Lifetime gehören zu deinem Apple Account, daher lässt sich der Test nur einmal nutzen. Für Rückerstattungen nutze <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>, denn Apple wickelt Zahlungen im App Store ab.</p>"],
+      ["Abmelden", "<p>Einstellungen › Account › <strong>Abmelden</strong> löscht deine Anmeldung und alle geladenen Daten von deinem Mac. Um Whoships auch auf GitHub den Zugriff zu entziehen, öffne GitHub › Settings › Applications.</p>"],
+      ["Whoships entfernen", "<p>Melde dich zuerst ab, wenn du die Daten löschen willst, beende dann Whoships und bewege es in den Papierkorb. Auf GitHub ändert sich nichts: Whoships liest nur.</p>"]
+    ],
+    "faqLink": "Suchst du allgemeine Fragen? Sieh dir die <a href=\"{p}/faq/\">FAQ</a> an."
+  },
+  "faq": {
+    "title": "Whoships FAQ: GitHub-Dashboard und Widgets für den Mac",
+    "description": "Antworten zu Whoships, der Mac-App für deine GitHub-Organisation: was sie liest, Datenschutz, Genehmigung, Preise, Aktualisierung und Voraussetzungen.",
+    "h1": "Fragen und Antworten",
+    "items": [
+      ["Was ist Whoships?", "Whoships ist eine Mac-App, die Pull Requests, Reviews, CI, Sicherheitswarnungen und DORA-Metriken einer GitHub-Organisation in Schreibtisch-Widgets, in der Menüleiste und in einem Dashboard über den ganzen Schreibtisch zeigt. Sie beantwortet, was dich braucht, worauf du wartest, wer woran arbeitet und wo es brennt."],
+      ["Für wen ist Whoships?", "Für Staff Engineers, Teamleads, Engineering Manager und CTOs, die wissen wollen, was in ihrer Organisation zählt, ohne zwanzig Browser-Tabs zu öffnen. Einzelne Entwickler nutzen Braucht mich und Ich warte auf, um ihre eigenen Pull Requests in Bewegung zu halten."],
+      ["Werden mein Code oder meine Daten an eure Server gesendet?", "Nein. Nur die App spricht mit GitHub. Deine Anmeldung bleibt im Schlüsselbund deines Macs, und was Whoships liest, bleibt auf deinem Mac. Die App-Store-Version sendet uns nichts. Die Version von whoships.app sendet anonyme Nutzungsstatistiken ohne GitHub-Daten, die du unter Einstellungen › Allgemein abschalten kannst."],
+      ["Ändert Whoships etwas auf GitHub?", "Nein. Whoships liest nur. Es kommentiert nie, genehmigt und mergt nichts, startet keine Läufe neu und ändert keine Einstellungen."],
+      ["Brauche ich die Genehmigung meiner Organisation?", "Wenn deine Organisation OAuth-Apps einschränkt, genehmigt ein Owner Whoships einmalig. Whoships hilft dir, die Genehmigung anzufragen, und kopiert eine fertige Nachricht für einen Owner. Ein Personal Access Token funktioniert ohne diese Genehmigung."],
+      ["Kann ich es ohne Anmeldung testen?", "Ja. „Mit Beispieldaten testen“ füllt jeden Wächter, jedes Widget und das Dashboard mit einer erfundenen Organisation, ganz ohne GitHub-Account. Beispieldaten sind immer kostenlos."],
+      ["Was kostet Whoships?", "Deine eigene Organisation beobachtest du 14 Tage kostenlos. Danach ist Whoships Lifetime ein einmaliger Kauf für €19.99 / US$19.99, inklusive Updates für Whoships 1. Es gibt kein Abo."],
+      ["Wie oft wird aktualisiert?", "Deine eigenen Pull Requests alle 3 Minuten, die Aktivität der Organisation alle 15 Minuten und Delivery, Sicherheit und CI-Gesundheit jede Stunde. Eine typische Organisation verbraucht etwa 400 der 5.000 API-Punkte pro Stunde von GitHub."],
+      ["Misst es DORA-Metriken?", "Ja. Der Delivery-Wächter misst Deployment-Häufigkeit, Durchlaufzeit für Änderungen, Change-Failure-Rate und Wiederherstellungszeit anhand von GitHub Deployments, Releases oder Merges in Produktions-Branches."],
+      ["Kann ich mehr als eine Organisation beobachten?", "Whoships beobachtet jeweils eine Organisation. In den Einstellungen kannst du die Organisation wechseln."],
+      ["Funktioniert es mit GitHub Enterprise?", "Whoships funktioniert mit Organisationen auf github.com, auch mit solchen auf GitHub Enterprise Cloud. GitHub Enterprise Server wird noch nicht unterstützt."],
+      ["Funktioniert es auf iPhone, Windows oder Linux?", "Nein. Whoships ist eine Mac-App und erfordert macOS 26 oder neuer."],
+      ["Ist Whoships von GitHub?", "Nein. Whoships stammt von einem unabhängigen Entwickler und steht in keiner Verbindung zu GitHub, Inc. Es nutzt die öffentliche API von GitHub mit deinem eigenen Account."]
+    ]
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden | Whoships",
+    "h1": "Seite nicht gefunden",
+    "text": "Diese Seite gibt es nicht. Versuch es mit der <a href=\"{p}/\">Startseite</a> oder dem <a href=\"{p}/support/\">Support</a>."
+  }
+}

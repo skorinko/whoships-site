@@ -1,0 +1,41 @@
+---js
+{
+  pagination: { data: "hubList", size: 1, alias: "locale", addAllPagesToCollections: true },
+  schema: ["app", "faq"],
+  updated: "2026-11-20",
+  eleventyComputed: {
+    permalink: (d) => `${d.locale.prefix}/${d.locale.hub.slug}/`,
+    placement: (d) => `hub_${d.locale.hub.key}`,
+    h: (d) => (d.i18n[d.locale.code] || d.i18n.en).hubs[d.locale.hub.key],
+    title: (d) => (d.i18n[d.locale.code] || d.i18n.en).hubs[d.locale.hub.key].title,
+    description: (d) => (d.i18n[d.locale.code] || d.i18n.en).hubs[d.locale.hub.key].description,
+    faqItems: (d) => (d.i18n[d.locale.code] || d.i18n.en).hubs[d.locale.hub.key].faq,
+    crumbs: (d) => [{ name: (d.i18n[d.locale.code] || d.i18n.en).nav[d.locale.hub.key] }],
+  },
+}
+---
+{%- set enOnly = ' hreflang="en"' if locale.code != 'en' else '' -%}
+<article class="doc">
+  <h1>{{ h.h1 }}</h1>
+  <p class="answer">{{ h.answer }}</p>
+  <div class="ctas left">
+    <a class="button" href="/download" data-track="download" data-placement="{{ placement }}">{{ t.cta.download }}</a>
+    <a class="button secondary" href="{{ locale.prefix }}/buy/" data-track="pricing" data-placement="{{ placement }}">{{ t.cta.pricing }}</a>
+  </div>
+  <figure><img src="/assets/{{ h.image }}.webp" alt="{{ h.imageAlt }}" width="1600" height="1000"></figure>
+  {%- for s in h.sections %}
+  <h2>{{ s[0] }}</h2>
+  {{ s[1] | fmt(v) | safe }}
+  {%- endfor %}
+  <h2>{{ t.home.watchersTitle }}</h2>
+  <ul class="pill-grid left">
+    {%- for w in watchers %}
+    <li><a href="/watchers/{{ w.slug }}/"{{ enOnly | safe }}>{{ t.watcherNames[w.key] }}</a></li>
+    {%- endfor %}
+  </ul>
+  <h2>{{ t.home.faqTitle }}</h2>
+  {% include "faq.njk" %}
+  <p class="updated">{{ t.lastUpdated }}: {{ updated | localDate(locale.code) }}</p>
+</article>
+{% include "facts.njk" %}
+{% include "band.njk" %}

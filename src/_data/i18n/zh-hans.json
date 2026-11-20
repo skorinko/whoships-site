@@ -1,0 +1,231 @@
+{
+  "oneLiner": "Whoships 是一款 Mac App，在桌面小组件、菜单栏和桌面仪表盘中显示你的 GitHub 组织的拉取请求、CI、代码审查和 DORA 指标。",
+  "skip": "跳到正文",
+  "nav": {
+    "widgets": "小组件",
+    "dashboard": "仪表盘",
+    "menubar": "菜单栏",
+    "watchers": "监控项",
+    "pricing": "价格",
+    "faq": "常见问题",
+    "support": "支持"
+  },
+  "footer": {
+    "home": "首页",
+    "pricing": "价格",
+    "faq": "常见问题",
+    "support": "支持",
+    "watchers": "监控项",
+    "guides": "指南",
+    "compare": "对比",
+    "changelog": "新功能",
+    "press": "媒体资料包",
+    "terms": "条款",
+    "refunds": "退款政策",
+    "privacy": "隐私政策",
+    "languageLabel": "语言",
+    "trademark": "GitHub 是 GitHub, Inc. 的商标。Whoships 与 GitHub 无任何关联。"
+  },
+  "cta": {
+    "download": "下载 Mac 版",
+    "pricing": "一次性 €19.99 · 价格",
+    "note": "使用你自己的组织可免费试用 14 天，之后一次性购买。无需订阅。需要 macOS 26 或更高版本。即将登陆 Mac App Store。",
+    "appStoreAlt": "从 Mac App Store 下载",
+    "bandTitle": "在桌面上掌握组织的脉搏",
+    "bandText": "下载 Whoships，无需账户，立即用示例数据试用。关注你自己的组织可免费使用 14 天。"
+  },
+  "facts": {
+    "title": "Whoships 概览",
+    "rows": [
+      ["简介", "一款 Mac App，让一个 GitHub 组织的拉取请求、代码审查、CI、安全和交付情况始终呈现在你眼前。"],
+      ["监控项", "待我处理、我在等待、需要关注、谁在做什么、活跃仓库、活跃成员、流程健康度、交付（DORA）、安全和 CI 健康度。每 3、15 或 60 分钟刷新一次。"],
+      ["显示位置", "各种尺寸的桌面小组件、菜单栏、铺满桌面的仪表盘，以及通知。"],
+      ["价格", "示例数据永久免费。关注你自己的组织可免费使用 14 天，之后一次性支付 €19.99 / US$19.99。无需订阅。"],
+      ["系统要求", "macOS 26 或更高版本，以及一个可以访问 github.com 上该组织的 GitHub 账户。"],
+      ["隐私", "只有 App 与 GitHub 通信。你的登录信息保存在 Mac 的钥匙串中，你的 GitHub 数据留在你的 Mac 上。App Store 版本不会向我们发送任何内容；whoships.app 版本会发送匿名使用统计，你可以将其关闭。"],
+      ["语言", "英语、德语、西班牙语、法语、意大利语、日语、韩语、葡萄牙语（巴西和葡萄牙）以及中文（简体和繁体）。"]
+    ]
+  },
+  "breadcrumbHome": "首页",
+  "lastUpdated": "最后更新",
+  "englishOnly": "英文",
+  "watcherNames": {
+    "myActions": "待我处理",
+    "myWaiting": "我在等待",
+    "globalAttention": "需要关注",
+    "whoIsWorking": "谁在做什么",
+    "activeRepos": "活跃仓库",
+    "activeDevs": "活跃成员",
+    "flowHealth": "流程健康度",
+    "delivery": "交付（DORA）",
+    "security": "安全",
+    "ciHealth": "CI 健康度"
+  },
+  "home": {
+    "title": "Whoships：Mac 上的 GitHub 仪表盘和小组件",
+    "description": "在 Mac 小组件、菜单栏和全桌面仪表盘中查看 GitHub 组织的拉取请求、CI、代码审查和 DORA 指标。",
+    "h1": "谁在交付什么，桌面上一目了然",
+    "lead": "哪些事需要你处理，你在等待什么，谁在做什么，整个 GitHub 组织哪里出了问题：Whoships 在小组件、菜单栏和铺满桌面的仪表盘中一一呈现。",
+    "iconAlt": "Whoships App 图标",
+    "shotDashboardAlt": "桌面上的 Whoships 仪表盘：待我处理、需要关注、安全、CI 健康度、流程健康度和交付卡片",
+    "shotWidgetsAlt": "Mac 桌面上的 Whoships 小组件",
+    "cards": [
+      ["需要你处理的", "请你进行的审查、你那些 CI 失败的 PR 及失败原因、合并冲突，以及可以合并的 PR。"],
+      ["哪里出了问题", "main 上的 CI 失败、对受保护分支的强制推送和直接推送、未经审查的合并、进入生产环境的热修复。"],
+      ["谁在做什么", "每个人的分支、打开的 PR、工单和已交付的内容，以及最活跃的仓库和成员。"],
+      ["为团队负责人和 CTO 打造", "流程健康度、DORA 交付指标、安全警报和 CI 健康度，从停滞的 PR 到不稳定的工作流。"],
+      ["为 Mac 打造", "各种尺寸的小组件、菜单栏摘要、全桌面仪表盘、通知，支持浅色和深色。"],
+      ["注重隐私", "Whoships 直接从 GitHub 读取你的组织信息。你的登录信息保存在钥匙串中，你的 GitHub 数据留在你的 Mac 上。"]
+    ],
+    "whereTitle": "三个地方随时查看",
+    "where": [
+      ["桌面仪表盘", "卡片铺满窗口后方的桌面，最紧急的排在最前。", "dashboard"],
+      ["小组件", "从小号到特大号，显示你选择的监控项或当前最紧急的内容。", "widgets"],
+      ["菜单栏", "显示需要你处理的事项数量，点按一下即可查看完整列表。", "menubar"]
+    ],
+    "watchersTitle": "关注组织的十个监控项",
+    "watchersText": "每个监控项回答一个关于组织的问题，并按各自的时间表刷新。",
+    "howTitle": "使用方法",
+    "howSteps": [
+      "下载 Whoships，点按“使用示例数据试用”，用一个虚构的组织体验全部功能。",
+      "使用 GitHub 登录或粘贴个人访问令牌，然后选择要关注的组织。",
+      "通过“编辑小组件”添加小组件，并在菜单栏中打开桌面仪表盘。"
+    ],
+    "faqTitle": "常见问题",
+    "faqMore": "更多问题与解答"
+  },
+  "hubs": {
+    "widgets": {
+      "title": "Mac 上的 GitHub 小组件：PR、CI 和代码审查 | Whoships",
+      "description": "用 Whoships 各种尺寸的小组件，把 GitHub 组织的拉取请求、代码审查和 CI 放到 Mac 桌面上。可用示例数据免费试用。",
+      "h1": "Mac 桌面上的 GitHub 小组件",
+      "answer": "GitHub 本身没有 Mac 小组件，Whoships 补上了这一点：提供小号、中号、大号和特大号的桌面及通知中心小组件，显示 GitHub 组织的拉取请求、代码审查、CI 和警报，并在 Whoships 运行时持续更新。",
+      "image": "widgets",
+      "imageAlt": "Mac 桌面上的 Whoships 小组件：待我处理、需要关注、流程健康度、安全和 CI 健康度",
+      "sections": [
+        ["GitHub 小组件可以显示什么？", "<p>每个小组件显示一个监控项：待我处理、我在等待、需要关注、谁在做什么、活跃仓库、活跃成员、流程健康度、交付（DORA）、安全或 CI 健康度。也可以选择“最紧急”，它会自动跟随当前有最严重事项的监控项。特大号小组件可并排显示两个监控项。</p>"],
+        ["如何在 Mac 上添加 GitHub 小组件？", "<ol><li><a href=\"/download\" data-track=\"download\" data-placement=\"hub_widgets\">下载 Whoships</a>，打开后使用 GitHub 登录，或选择“使用示例数据试用”。</li><li>按住 Control 键点按桌面，然后选取“编辑小组件”。</li><li>搜索 Whoships，将小组件拖到桌面上。</li><li>要让小组件固定显示某个监控项，请按住 Control 键点按它，然后选取菜单中的编辑“Whoships”。</li></ol>"],
+        ["小组件会自动更新吗？", "<p>会。每当 Whoships 刷新时都会更新：你自己的拉取请求每 3 分钟一次，组织动态每 15 分钟一次，交付、安全和 CI 健康度每小时一次。在“设置 › 通用 › 登录时打开”中开启，让 Whoships 保持运行。</p>"],
+        ["可以直接在小组件里操作某一行吗？", "<p>点按某一行，即可在 GitHub 上打开对应的拉取请求、运行或警报。右上角的圆形按钮会把小组件切换到下一个监控项，铃铛按钮可将事项搁置一天。</p>"]
+      ],
+      "faq": [
+        ["小组件可以交互吗？", "可以。点按行会在 GitHub 上打开，切换按钮可更换监控项，铃铛按钮可将事项搁置一天，全部无需打开 App。"],
+        ["为什么我的小组件变暗了？", "当其他 App 位于前台时，macOS 会调暗桌面小组件。你可以在“系统设置 › 桌面与程序坞 › 在桌面上调暗小组件”中更改此设置。"],
+        ["小组件能在通知中心使用吗？", "可以。除了桌面，也可以在通知中心通过“编辑小组件”添加。"]
+      ]
+    },
+    "menubar": {
+      "title": "Mac 上的 GitHub 菜单栏 App：PR 和代码审查 | Whoships",
+      "description": "Whoships 在 Mac 菜单栏中显示需要你处理的 GitHub 拉取请求和代码审查数量，点按一下即可查看完整列表。免费试用。",
+      "h1": "面向整个组织的 GitHub 菜单栏 App",
+      "answer": "Whoships 在 Mac 菜单栏中显示需要你处理的事项数量：审查请求、CI 失败或有冲突的你的拉取请求，以及可以合并的 PR。点按它即可查看 GitHub 组织的“待我处理”“我在等待”和“需要关注”，无需打开浏览器。",
+      "image": "dashboard",
+      "imageAlt": "菜单栏弹出窗口和仪表盘中显示的 Whoships 待我处理、我在等待和需要关注卡片",
+      "sections": [
+        ["菜单栏会显示什么？", "<p>图标上显示“待我处理”中的事项数量。弹出窗口列出“待我处理”“我在等待”和“需要关注”，这是你一天中最常查看的三个监控项。每一行都会在 GitHub 上打开对应的拉取请求或运行。</p>"],
+        ["它和 GitHub 通知有什么不同？", "<p>GitHub 通知是所有已发生事件的信息流。Whoships 显示的则是当前状态：在一个组织范围内，现在仍在等待你的事项，以及检查失败的原因。事项完成后就会从列表中消失。</p>"],
+        ["它会通知我吗？", "<p>如果你允许通知，Whoships 会针对警告及以上级别（或你选择的级别）的新事项发送通知。启动后的首次刷新只记录现有状态，因此不会重复推送旧的警报。</p>"],
+        ["如何设置？", "<ol><li><a href=\"/download\" data-track=\"download\" data-placement=\"hub_menubar\">下载 Whoships</a> 并打开。</li><li>使用 GitHub 登录并选择你的组织。</li><li>Whoships 图标会出现在菜单栏中。开启“设置 › 通用 › 登录时打开”，让它一直留在那里。</li></ol>"]
+      ],
+      "faq": [
+        ["Whoships 会一直留在程序坞中吗？", "只有在它的窗口打开、且“设置 › 通用 › 在程序坞中显示”已开启时才会。关闭窗口后，Whoships 会在菜单栏中继续运行，小组件和仪表盘也会持续更新。"],
+        ["会显示个人仓库吗？", "Whoships 只关注一个组织。不属于任何组织的个人仓库不包括在内。"],
+        ["它会消耗多少 GitHub API 配额？", "一般的组织每小时约 400 点，远低于 GitHub 每小时 5,000 点的限额。剩余配额不足时，较重的刷新会暂停。"]
+      ]
+    },
+    "dashboard": {
+      "title": "Mac 桌面上的 GitHub 组织仪表盘 | Whoships",
+      "description": "Whoships 把你的 Mac 桌面变成实时的 GitHub 组织仪表盘：PR、CI、安全和 DORA 卡片显示在墙纸之上、窗口之后。",
+      "h1": "桌面上的 GitHub 组织仪表盘",
+      "answer": "Whoships 可以用 GitHub 组织的实时仪表盘铺满你的 Mac 桌面。待我处理、需要关注、流程健康度、交付、安全和 CI 健康度卡片位于墙纸之上、窗口之后，最紧急的排在最前，看一眼桌面就知道组织的状况。",
+      "image": "dashboard",
+      "imageAlt": "Whoships 桌面仪表盘：墙纸上的待我处理、需要关注、安全、CI 健康度、流程健康度和交付卡片",
+      "sections": [
+        ["桌面仪表盘是如何工作的？", "<p>Whoships 在每台显示器的桌面层放置一个无边框窗口，就像动态墙纸一样。卡片按列铺满屏幕，按紧急程度或你指定的顺序排列。你的窗口始终位于它的上方。</p>"],
+        ["可以点按卡片吗？", "<p>你可以选择让仪表盘位于桌面图标之上，此时可以点按其中的行在 GitHub 上打开；或位于桌面图标之下，仅供查看。打开任意卡片的完整列表，即可筛选或搁置事项。</p>"],
+        ["可以显示哪些卡片？", "<p>十个监控项都可以：待我处理、我在等待、需要关注、谁在做什么、活跃仓库、活跃成员、流程健康度、交付（DORA）、安全和 CI 健康度。不需要的可以隐藏。</p>"],
+        ["如何开启？", "<ol><li><a href=\"/download\" data-track=\"download\" data-placement=\"hub_dashboard\">下载 Whoships</a> 并登录，或用示例数据试用。</li><li>点按菜单栏中的 Whoships 图标。</li><li>打开“桌面仪表盘”。</li></ol>"]
+      ],
+      "faq": [
+        ["支持多台显示器吗？", "支持。仪表盘会出现在每台显示器上，位于你的窗口之后。"],
+        ["会拖慢我的 Mac 吗？", "不会。仪表盘只在 Whoships 刷新时重绘，数据会按计划在后台获取。"],
+        ["它能替代团队的电视看板吗？", "它是你自己 Mac 上的个人视图。如果要用于共享屏幕，请在连接该屏幕的 Mac 上运行 Whoships 并开启桌面仪表盘。"]
+      ]
+    }
+  },
+  "buy": {
+    "title": "Whoships 价格：免费试用 14 天，之后一次性购买",
+    "description": "用你自己的 GitHub 组织免费试用 Whoships 14 天，之后一次性购买，价格 €19.99 / US$19.99。无需订阅。",
+    "h1": "先免费试用，再一次性购买。",
+    "lead": "免费关注你自己的 GitHub 组织 14 天，所有功能全部包含。之后由 Whoships Lifetime 让一切继续运行：小组件、菜单栏、桌面仪表盘和通知。无需订阅。",
+    "per": "14 天免费试用后一次性购买。价格已包含适用的增值税或销售税。",
+    "waiting": "在线结账即将开放",
+    "tryFirst": "下载免费：选择你的组织后，即可在 App 中开始 14 天试用。示例数据永久免费，无需 GitHub 账户。",
+    "downloadLink": "<a href=\"/download\" data-track=\"download\" data-placement=\"buy_page\">下载 Mac 版 Whoships</a>（macOS 26 或更高版本）",
+    "cards": [
+      ["14 天免费", "当你选择关注自己的组织时，试用便会开始，包含所有功能。开始试用无需绑定银行卡。"],
+      ["你将获得", "购买后会立即通过电子邮件收到 Whoships Lifetime 的许可证密钥。将它粘贴到 Whoships 中，试用结束后即可继续关注你的组织。"],
+      ["全部功能", "全部十个监控项：需要你处理的事项、需要关注、谁在做什么、流程健康度、DORA 交付、安全和 CI 健康度。"],
+      ["你的所有 Mac", "许可证可在你本人使用的每台 Mac 上使用。"],
+      ["包含更新", "包含 Whoships 1 的所有更新，直接在 App 内推送。"],
+      ["14 天退款", "不满意？购买后 14 天内可获得全额退款。请参阅<a href=\"/refunds/\">退款政策</a>。"]
+    ],
+    "waysTitle": "两种购买方式",
+    "wayWeb": "<strong>通过本网站</strong>：从 whoships.app 下载 Whoships，试用 14 天，然后用许可证密钥解锁。订单流程由我们的在线经销商 Paddle.com 处理，Paddle.com 是这些订单的记录商家（Merchant of Record）。",
+    "wayStore": "<strong>通过 Mac App Store</strong>（即将推出）：免费下载 Whoships，开始 14 天试用，并在 App 内购买 Whoships Lifetime。该笔付款由 Apple 处理，并可通过家人共享与家人共享。",
+    "smallKeys": "许可证密钥用于解锁从 whoships.app 下载的版本；在 App Store 购买则解锁 App Store 版本。两者之间的购买不能互相转移。",
+    "smallTerms": "需要 macOS 26 或更高版本，以及一个可以访问你要关注的组织的 GitHub 账户。每人需要各自的许可证。购买即表示你同意<a href=\"/terms/\">条款</a>和<a href=\"/refunds/\">退款政策</a>。如有疑问：<a href=\"mailto:macapps.support@icloud.com\">macapps.support@icloud.com</a>。",
+    "js": {
+      "buy": "购买 Whoships Lifetime",
+      "sandbox": "沙盒模式：仅限测试购买。请使用卡号 4242 4242 4242 4242。",
+      "thanks": "谢谢！你的许可证密钥正在发送{to}，通常一分钟内就会送达；如果没有看到，请检查垃圾邮件文件夹。在 Whoships 中点按“输入许可证密钥”并粘贴即可。",
+      "thanksTo": "至 {email}",
+      "done": "购买完成"
+    }
+  },
+  "support": {
+    "title": "Whoships 支持：设置、登录和小组件",
+    "description": "Whoships 帮助：登录 GitHub、组织批准、令牌、小组件、刷新频率、免费试用、许可证密钥以及删除 App。",
+    "h1": "支持",
+    "intro": "有问题、遇到故障或有想法，请写信至 <a href=\"mailto:macapps.support@icloud.com\">macapps.support@icloud.com</a>。请注明你的 macOS 版本以及你看到的情况。",
+    "sections": [
+      ["快速上手", "<ol class=\"steps\"><li>打开 Whoships。在欢迎窗口中点按<strong>使用 GitHub 登录</strong>，拷贝代码，粘贴到打开的 GitHub 页面，然后点按 <strong>Authorize</strong>。也可以先用<strong>使用示例数据试用</strong>体验全部功能。</li><li>选择要关注的组织。</li><li>添加小组件：按住 Control 键点按桌面，选取<strong>编辑小组件</strong>，搜索 <strong>Whoships</strong>，然后将小组件拖到桌面上。</li><li>要使用全桌面仪表盘，请点按菜单栏中的 Whoships 图标，然后打开<strong>桌面仪表盘</strong>。</li></ol>"],
+      ["“正在等待你的组织批准 Whoships”", "<p>许多组织只允许经过批准的 App 读取其私有数据。此时 Whoships 宁可什么都不显示，也不会显示错误或空白的结果。在等待界面中点按<strong>在 GitHub 上打开 Whoships</strong> 以请求访问，并通过<strong>拷贝给所有者的消息</strong>将现成的消息发给组织所有者。所有者可在 Organization settings › Third-party access › OAuth app policy 中批准。Whoships 每两分钟检查一次，获批后会自动开始。如果你更愿意使用个人访问令牌，它不受此批准的影响。</p>"],
+      ["使用个人访问令牌登录", "<p>在欢迎窗口中选择<strong>使用令牌</strong>。创建一个具有 <code>repo</code>、<code>read:org</code> 和 <code>read:user</code> 权限范围的经典令牌。如果你的组织使用单点登录，请在 GitHub 上点按令牌旁边的 <strong>Configure SSO</strong> 并为该组织授权。</p>"],
+      ["小组件", "<ul><li>每个小组件卡片的右上角都有一个圆形切换按钮，用于显示下一个列表。要让小组件固定显示某个列表，请按住 Control 键点按它并选取<strong>编辑“Whoships”</strong>。</li><li>小组件会在 Whoships 刷新时更新，因此请让它保持运行：设置 › 通用 › <strong>登录时打开</strong>。</li><li>当其他 App 位于前台时，macOS 会调暗桌面小组件；可在系统设置 › 桌面与程序坞 › <strong>在桌面上调暗小组件</strong>中控制。</li></ul>"],
+      ["刷新频率", "<p>你自己的 PR 每 3 分钟一次，组织动态每 15 分钟一次，交付、安全和 CI 健康度每小时一次，远低于 GitHub 每小时的 API 限额。点按刷新按钮可立即更新。</p>"],
+      ["部分卡片显示“需要组织管理员权限”", "<p>自托管运行器和外部协作者需要组织管理员权限，账单需要所有者或账单管理员权限，安全警报需要启用相应功能并拥有访问权限。Whoships 会显示其余所有内容，并注明无法读取的部分。</p>"],
+      ["免费试用和购买", "<p>示例数据永久免费：选择<strong>使用示例数据试用</strong>即可使用一个虚构的组织，无需 GitHub 账户。选择你自己的组织后，Whoships 会立即提供 <strong>14 天免费试用</strong>。试用结束后，一次性购买 <strong>Whoships Lifetime</strong> 即可继续使用，无需订阅。在此之前，菜单栏和小组件会提示你购买，且不会从 GitHub 读取任何内容。请参阅<a href=\"{p}/buy/\">价格</a>。</p>"],
+      ["许可证密钥（在 whoships.app 购买）", "<ul><li><strong>解锁：</strong>打开 Whoships，点按<strong>解锁</strong>，粘贴购买邮件中的许可证密钥，然后点按<strong>激活</strong>。</li><li><strong>其他 Mac：</strong>在你本人使用的每台 Mac 上输入同一个密钥即可。</li><li><strong>密钥丢失？</strong>用购买时使用的邮箱给我们发邮件，我们会重新发送。</li><li>14 天内<strong>退款</strong>：请参阅<a href=\"/refunds/\">退款政策</a>。</li></ul>"],
+      ["App Store 购买", "<p>在 Mac App Store 购买的？在另一台 Mac 上或重新安装后，打开“设置 › 账户”并点按<strong>恢复购买</strong>。试用和 Whoships Lifetime 归属于你的 Apple 账户，因此试用只能使用一次。由于 App Store 付款由 Apple 处理，如需退款，请前往 <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>。</p>"],
+      ["退出登录", "<p>设置 › 账户 › <strong>退出登录</strong>会从你的 Mac 上删除登录信息以及所有已获取的数据。如果还要在 GitHub 上撤销 Whoships 的访问权限，请打开 GitHub › Settings › Applications。</p>"],
+      ["删除 Whoships", "<p>如果要删除它的数据，请先退出登录，然后退出 Whoships 并将其移到废纸篓。GitHub 上的任何内容都不会受到影响：Whoships 只读取数据。</p>"]
+    ],
+    "faqLink": "想了解一般问题？请参阅<a href=\"{p}/faq/\">常见问题</a>。"
+  },
+  "faq": {
+    "title": "Whoships 常见问题：Mac 上的 GitHub 仪表盘和小组件",
+    "description": "关于 Whoships 这款面向 GitHub 组织的 Mac App 的解答：读取哪些数据、隐私、组织批准、价格、刷新频率和系统要求。",
+    "h1": "常见问题",
+    "items": [
+      ["Whoships 是什么？", "Whoships 是一款 Mac App，在桌面小组件、菜单栏和铺满桌面的仪表盘中显示一个 GitHub 组织的拉取请求、代码审查、CI、安全警报和 DORA 指标。它告诉你哪些事需要你处理、你在等待什么、谁在做什么，以及哪里出了问题。"],
+      ["Whoships 适合谁？", "适合想要了解组织中重要事项、又不想打开二十个浏览器标签页的资深工程师、团队负责人、工程经理和 CTO。个人开发者可以用“待我处理”和“我在等待”推动自己的拉取请求不断向前。"],
+      ["我的代码或数据会发送到你们的服务器吗？", "不会。只有 App 与 GitHub 通信。你的登录信息保存在 Mac 的钥匙串中，Whoships 读取的内容留在你的 Mac 上。App Store 版本不会向我们发送任何内容。whoships.app 版本会发送不含任何 GitHub 数据的匿名使用统计，你可以在“设置 › 通用”中将其关闭。"],
+      ["Whoships 会更改 GitHub 上的任何内容吗？", "不会。Whoships 只读取数据，从不评论、批准、合并、重新运行或更改设置。"],
+      ["需要我的组织批准吗？", "如果你的组织限制 OAuth App，所有者需要批准 Whoships 一次。Whoships 会帮你发出请求，并为你拷贝一条可直接发给所有者的消息。使用个人访问令牌则无需此批准。"],
+      ["不登录可以试用吗？", "可以。“使用示例数据试用”会用一个虚构的组织填满所有监控项、小组件和仪表盘，无需 GitHub 账户。示例数据永久免费。"],
+      ["Whoships 多少钱？", "关注你自己的组织可免费使用 14 天。之后 Whoships Lifetime 一次性购买，价格 €19.99 / US$19.99，包含 Whoships 1 的更新。无需订阅。"],
+      ["多久刷新一次？", "你自己的拉取请求每 3 分钟一次，组织动态每 15 分钟一次，交付、安全和 CI 健康度每小时一次。一般的组织每小时使用 GitHub 5,000 个 API 点中的约 400 个。"],
+      ["它能衡量 DORA 指标吗？", "能。“交付”监控项会根据 GitHub Deployments、发布或合并到生产分支的记录，衡量部署频率、变更前置时间、变更失败率和恢复时间。"],
+      ["可以同时关注多个组织吗？", "Whoships 一次关注一个组织。你可以在“设置”中切换组织。"],
+      ["支持 GitHub Enterprise 吗？", "Whoships 支持 github.com 上的组织，包括使用 GitHub Enterprise Cloud 的组织。暂不支持 GitHub Enterprise Server。"],
+      ["可以在 iPhone、Windows 或 Linux 上使用吗？", "不可以。Whoships 是一款 Mac App，需要 macOS 26 或更高版本。"],
+      ["Whoships 是 GitHub 出品的吗？", "不是。Whoships 由一位独立开发者打造，与 GitHub, Inc. 无任何关联。它通过你自己的账户使用 GitHub 的公开 API。"]
+    ]
+  },
+  "notFound": {
+    "title": "找不到页面 | Whoships",
+    "h1": "找不到页面",
+    "text": "此页面不存在。请前往<a href=\"{p}/\">首页</a>或<a href=\"{p}/support/\">支持</a>。"
+  }
+}

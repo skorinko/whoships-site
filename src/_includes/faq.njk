@@ -1,0 +1,8 @@
+<div class="faq">
+  {%- for f in faqItems %}
+  <section>
+    <h3>{{ f[0] | fmt(v) }}</h3>
+    <p>{{ f[1] | fmt(v) | safe }}</p>
+  </section>
+  {%- endfor %}
+</div>

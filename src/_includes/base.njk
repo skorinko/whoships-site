@@ -1,0 +1,93 @@
+{%- set alts = collections.all | alternates(locale.pageKey or pageKey) -%}
+{%- set p = locale.prefix -%}
+{%- set enOnly = ' hreflang="en"' if locale.code != 'en' else '' -%}
+<!doctype html>
+<html lang="{{ locale.hreflang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  {%- if noindex %}
+  <meta name="robots" content="noindex">
+  {%- else %}
+  <link rel="canonical" href="{{ page.url | absolute }}">
+  {%- endif %}
+  {%- if alts.length > 1 %}
+  {%- for a in alts %}
+  <link rel="alternate" hreflang="{{ a.hreflang }}" href="{{ a.url | absolute }}">
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ alts[0].url | absolute }}">
+  {%- endif %}
+  <meta property="og:type" content="{{ 'article' if 'article' in (schema or []) else 'website' }}">
+  <meta property="og:site_name" content="Whoships">
+  <meta property="og:title" content="{{ ogTitle or title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ page.url | absolute }}">
+  <meta property="og:image" content="{{ site.url }}/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="{{ locale.og }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#13111c" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/icon.png">
+  <link rel="alternate" type="application/rss+xml" title="Whoships" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/style.css?v=5">
+  <script defer src="/assets/analytics.js?v=4"></script>
+  {{ { locale: locale, t: t, title: title, description: description, url: page.url, schema: schema, faq: faqItems, crumbs: crumbs, updated: updated, image: image } | jsonld | safe }}
+</head>
+<body>
+  <a class="skip" href="#main">{{ t.skip }}</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ p }}/"><img src="/assets/icon.png" alt="" width="32" height="32">Whoships</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="{{ p }}/github-dashboard-mac/">{{ t.nav.dashboard }}</a>
+        <a href="{{ p }}/github-widgets-mac/">{{ t.nav.widgets }}</a>
+        <a href="{{ p }}/github-menu-bar-app-mac/">{{ t.nav.menubar }}</a>
+        <a href="/watchers/"{{ enOnly | safe }}>{{ t.nav.watchers }}</a>
+        <a href="{{ p }}/buy/">{{ t.nav.pricing }}</a>
+        <a href="{{ p }}/faq/">{{ t.nav.faq }}</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    {%- if crumbs %}
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ p }}/">{{ t.breadcrumbHome }}</a>{% for c in crumbs %} › {% if c.url %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}<span aria-current="page">{{ c.name }}</span>{% endif %}{% endfor %}</nav>
+    {%- endif %}
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-links">
+        <a href="{{ p }}/">{{ t.footer.home }}</a>
+        <a href="{{ p }}/buy/">{{ t.footer.pricing }}</a>
+        <a href="{{ p }}/faq/">{{ t.footer.faq }}</a>
+        <a href="{{ p }}/support/">{{ t.footer.support }}</a>
+        <a href="/watchers/"{{ enOnly | safe }}>{{ t.footer.watchers }}</a>
+        <a href="/guides/"{{ enOnly | safe }}>{{ t.footer.guides }}</a>
+        <a href="/compare/"{{ enOnly | safe }}>{{ t.footer.compare }}</a>
+        <a href="/changelog/"{{ enOnly | safe }}>{{ t.footer.changelog }}</a>
+        <a href="/press/"{{ enOnly | safe }}>{{ t.footer.press }}</a>
+        <a href="/terms/"{{ enOnly | safe }}>{{ t.footer.terms }}</a>
+        <a href="/refunds/"{{ enOnly | safe }}>{{ t.footer.refunds }}</a>
+        <a href="/privacy/"{{ enOnly | safe }}>{{ t.footer.privacy }}</a>
+        <a href="mailto:{{ site.supportEmail }}">{{ site.supportEmail }}</a>
+      </div>
+      <nav class="langs" aria-label="{{ t.footer.languageLabel }}">
+        {%- set switchTo = alts if alts.length > 1 else [] -%}
+        {%- for l in site.locales %}
+        {%- set target = null -%}
+        {%- for a in switchTo %}{% if a.code == l.code %}{% set target = a.url %}{% endif %}{% endfor %}
+        <a href="{{ target or (l.prefix + '/') }}" hreflang="{{ l.hreflang }}" lang="{{ l.hreflang }}"{% if l.code == locale.code %} aria-current="true"{% endif %}>{{ l.name }}</a>
+        {%- endfor %}
+      </nav>
+      <span class="copy">© 2026 {{ site.author }} · {{ t.footer.trademark }}</span>
+    </div>
+  </footer>
+</body>
+</html>

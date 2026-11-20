@@ -1,0 +1,30 @@
+---js
+{
+  // The hand-written site's URLs (buy.html, support.html, ...). The app's buy link, the App Store
+  // listing and Paddle point at them, so each forwards to the new page, keeping ?query and #hash.
+  pagination: { data: "legacy", size: 1, alias: "old" },
+  legacy: [
+    { from: "buy.html", to: "/buy/" },
+    { from: "support.html", to: "/support/" },
+    { from: "privacy.html", to: "/privacy/" },
+    { from: "terms.html", to: "/terms/" },
+    { from: "refunds.html", to: "/refunds/" },
+  ],
+  permalink: (d) => `/${d.old.from}`,
+  layout: false,
+  eleventyExcludeFromCollections: true,
+}
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Whoships</title>
+<meta name="description" content="This page moved to {{ site.url }}{{ old.to }}">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{{ site.url }}{{ old.to }}">
+<meta http-equiv="refresh" content="0; url={{ old.to }}">
+<script>location.replace("{{ old.to }}" + location.search + location.hash);</script>
+</head>
+<body><h1>Whoships</h1><p><a href="{{ old.to }}">Continue to {{ site.url }}{{ old.to }}</a></p></body>
+</html>

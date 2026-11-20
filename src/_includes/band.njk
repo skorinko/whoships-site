@@ -1,0 +1,12 @@
+<section class="band">
+  <h2>{{ t.cta.bandTitle }}</h2>
+  <p>{{ t.cta.bandText }}</p>
+  <div class="ctas">
+    <a class="button" href="/download" data-track="download" data-placement="{{ placement or 'page' }}_band">{{ t.cta.download }}</a>
+    <a class="button secondary" href="{{ locale.prefix }}/buy/" data-track="pricing" data-placement="{{ placement or 'page' }}_band">{{ t.cta.pricing }}</a>
+  </div>
+  {%- if site.appStoreLive %}
+  <p class="store-badge"><a href="{{ site.appStoreUrl }}" data-track="appstore" data-placement="{{ placement or 'page' }}_band"><img src="/assets/mac-app-store-badge.svg" alt="{{ t.cta.appStoreAlt }}" width="156" height="40"></a></p>
+  {%- endif %}
+  <p class="note">{{ t.cta.note }}</p>
+</section>

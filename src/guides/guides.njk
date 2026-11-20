@@ -1,0 +1,28 @@
+---
+title: "Guides: GitHub Pull Requests, CI and DORA | Whoships"
+description: "Practical guides for keeping a GitHub organization's pull requests, reviews, CI and delivery metrics in view on your Mac."
+h1: Guides
+schema: []
+layout: base.njk
+---
+<article class="doc">
+  <h1>Guides</h1>
+  <p class="answer">Practical guides for staying on top of a GitHub organization from your Mac: reviews waiting for you, failing CI, DORA metrics, organization approval and the apps that help.</p>
+  <div class="cards-links">
+    {%- for g in collections.guide | reverse %}{% if g.data.short %}
+    <a href="{{ g.url }}"><strong>{{ g.data.h1 or g.data.title }}</strong><span>{{ g.data.description }}</span></a>
+    {%- endif %}{% endfor %}
+  </div>
+  <h2>Comparisons</h2>
+  <div class="cards-links">
+    {%- for g in collections.compare %}{% if g.data.short %}
+    <a href="{{ g.url }}"><strong>{{ g.data.h1 or g.data.title }}</strong><span>{{ g.data.description }}</span></a>
+    {%- endif %}{% endfor %}
+  </div>
+  <h2>Watchers</h2>
+  <div class="cards-links">
+    {%- for w in watchers %}
+    <a href="/watchers/{{ w.slug }}/"><strong>{{ w.name }}</strong><span>{{ w.description }}</span></a>
+    {%- endfor %}
+  </div>
+</article>
