@@ -148,18 +148,18 @@ and 1–2 comparisons. No page before the feature ships.
 
 **Owner's steps:**
 
-- [ ] GitHub: `whoships-site` › Settings › Pages › Source: **GitHub Actions**, then merge the
-      `seo-foundation` pull request (merging deploys).
-- [ ] After the first deploy: `https://whoships.app/appcast.xml` and `/download` still work
+- [x] GitHub: `whoships-site` › Settings › Pages › Source: **GitHub Actions**; `seo-foundation`
+      merged and deployed (2026-11-20).
+- [x] After the first deploy: `https://whoships.app/appcast.xml` and `/download` still work
       (Sparkle and the edge-analytics Worker read the appcast), `/buy.html?utm_source=x` lands on
       `/buy/?utm_source=x`.
 - [ ] Cloudflare: AI Crawl Control / "Block AI bots" must not block the crawlers robots.txt allows;
       managed robots.txt off. Use AI Crawl Control analytics (GitHub Pages has no logs).
-- [ ] Google Search Console: domain property via DNS TXT, submit the sitemap, request indexing for
+- [x] Google Search Console (2026-11-20): domain property via DNS TXT, submit the sitemap, request indexing for
       `/`, `/github-widgets-mac/`, `/watchers/dora-metrics/` and `/de/`.
-- [ ] Bing Webmaster Tools: import from Search Console, submit the sitemap (Bing feeds ChatGPT
+- [x] Bing Webmaster Tools (2026-11-20): import from Search Console, submit the sitemap (Bing feeds ChatGPT
       search and Copilot).
-- [ ] IndexNow: after each deploy, ping
+- [ ] IndexNow: after each deploy, ping (home page pinged 2026-11-20, accepted with 202)
       `https://api.indexnow.org/indexnow?url=<changed url>&key=<key in static/>`.
 - [ ] When the App Store version is live: `appStoreLive: true` and `pt=<provider ID>` in
       `appStoreUrl` (`site.js`), and the App Store Marketing URL `https://whoships.app/` and
